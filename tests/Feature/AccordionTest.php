@@ -4,9 +4,6 @@ declare(strict_types=1);
 
 namespace BladeUix\DaisyUi\Tests\Feature;
 
-use Illuminate\View\ComponentSlot;
-use BladeUix\DaisyUi\View\Components\Accordion;
-
 it(description: 'can render accordion with default classes', closure: function () {
     $view = $this->blade(template: '<x-daisyui::accordion title="Title">Content</x-daisyui::accordion>');
 
@@ -33,11 +30,17 @@ it(description: 'can render accordion with title prop', closure: function () {
 });
 
 it(description: 'prefers title slot over title prop', closure: function () {
-    $component = new Accordion(title: 'Prop Title');
+    $view = $this->blade(template: <<<'BLADE'
+        <x-daisyui::accordion title="Prop Title">
+            <x-slot:title>
+                <div class="font-semibold">Slot Title</div>
+            </x-slot:title>
+            Content
+        </x-daisyui::accordion>
+    BLADE);
 
-    expect($component->titleContent([
-        'title' => new ComponentSlot('<div class="font-semibold">Slot Title</div>'),
-    ]))->toBe('<div class="font-semibold">Slot Title</div>');
+    $view->assertSee(value: '<summary class="collapse-title"><div class="font-semibold">Slot Title</div></summary>', escape: false);
+    $view->assertDontSee(value: '<summary class="collapse-title">Prop Title</summary>', escape: false);
 });
 
 it(description: 'can render accordion with name attribute', closure: function () {
