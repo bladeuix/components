@@ -90,7 +90,7 @@ Link adds the missing underline style to links.
 
 ```html
 <x-daisyui::link
-    href="https://github.com/saadeghi/daisyui"
+    href="https://github.com/bladeuix/daisyui"
     target="_blank"
     rel="noopener noreferrer"
     title="Visit DaisyUI on GitHub"
@@ -104,7 +104,7 @@ Link adds the missing underline style to links.
 ```html +parse
 <div class="component-preview">
     <x-daisyui::link
-        href="https://github.com/saadeghi/daisyui"
+        href="https://github.com/bladeuix/daisyui"
         target="_blank"
         rel="noopener noreferrer"
         title="Visit DaisyUI on GitHub"
