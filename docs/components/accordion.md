@@ -72,6 +72,60 @@ Accordion displays an expandable/collapsible content section.
 </div>
 ```
 
+## Border
+
+### Default
+
+```html
+<x-daisyui::accordion title="Bordered accordion">
+    This accordion uses the default border and background classes.
+</x-daisyui::accordion>
+```
+
+```html +parse
+<div class="component-preview">
+    <x-daisyui::accordion title="Bordered accordion">
+        This accordion uses the default border and background classes.
+    </x-daisyui::accordion>
+</div>
+```
+
+### Without
+
+```html
+<x-daisyui::accordion :border="false" title="Borderless accordion">
+    This accordion removes the default border and background classes.
+</x-daisyui::accordion>
+```
+
+```html +parse
+<div class="component-preview">
+    <x-daisyui::accordion :border="false" title="Borderless accordion">
+        This accordion removes the default border and background classes.
+    </x-daisyui::accordion>
+</div>
+```
+
+### Custom
+
+```html
+<x-daisyui::accordion 
+        :border="false" 
+        class="border border-primary bg-base-200" 
+        title="Custom styled accordion"
+>
+    This accordion uses custom border and background utilities.
+</x-daisyui::accordion>
+```
+
+```html +parse
+<div class="component-preview">
+    <x-daisyui::accordion :border="false" class="border border-primary bg-base-200" title="Custom styled accordion">
+        This accordion uses custom border and background utilities.
+    </x-daisyui::accordion>
+</div>
+```
+
 ## Icon Variants
 
 ### Arrow Icon
@@ -106,7 +160,7 @@ Accordion displays an expandable/collapsible content section.
 </div>
 ```
 
-## State Variants
+## Open State
 
 ### Forced Open
 
@@ -124,18 +178,34 @@ Accordion displays an expandable/collapsible content section.
 </div>
 ```
 
-### Forced Closed
+### Closed By Default
 
 ```html
-<x-daisyui::accordion state="close" title="This is forced closed">
-    This accordion is always closed.
+<x-daisyui::accordion title="Closed by default">
+    This accordion uses the default interactive state with no forced modifier.
 </x-daisyui::accordion>
 ```
 
 ```html +parse
 <div class="component-preview">
-    <x-daisyui::accordion state="close" title="This is forced closed">
-        This accordion is always closed.
+    <x-daisyui::accordion title="Closed by default">
+        This accordion uses the default interactive state with no forced modifier.
+    </x-daisyui::accordion>
+</div>
+```
+
+### Forced Close
+
+```html
+<x-daisyui::accordion :open="false" title="Forced close">
+    This accordion uses the `collapse-close` modifier.
+</x-daisyui::accordion>
+```
+
+```html +parse
+<div class="component-preview">
+    <x-daisyui::accordion :open="false" title="Forced close">
+        This accordion uses the `collapse-close` modifier.
     </x-daisyui::accordion>
 </div>
 ```
@@ -149,14 +219,14 @@ Accordion displays an expandable/collapsible content section.
     open 
     class="w-full"
     id="accordion-1"
-    aria-label="Advanced accordion example"
+    aria-label="Advance accordion example"
 >
     <x-slot:title>
         <div class="font-semibold">Click to expand</div>
     </x-slot:title>
 
     <div class="space-y-3">
-        <p>This is advanced usage with custom attributes and HTML content.</p>
+        <p>This is advance usage with custom attributes and HTML content.</p>
 
         <ul class="list-disc pl-5">
             <li>Custom heading content</li>
@@ -177,14 +247,14 @@ Accordion displays an expandable/collapsible content section.
         open 
         class="w-full"
         id="accordion-1"
-        aria-label="Advanced accordion example"
+        aria-label="Advance accordion example"
     >
         <x-slot:title>
             <div class="font-semibold">Click to expand</div>
         </x-slot:title>
 
         <div class="space-y-3">
-            <p>This is advanced usage with custom attributes and HTML content.</p>
+            <p>This is advance usage with custom attributes and HTML content.</p>
 
             <ul class="list-disc pl-5">
                 <li>Custom heading content</li>

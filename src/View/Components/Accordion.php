@@ -14,8 +14,8 @@ class Accordion extends Component
         public ?string $name = null,
         public ?string $title = null,
         public ?string $icon = null,
-        public ?string $state = null,
-        public bool $open = false
+        public ?bool $open = null,
+        public bool $border = true
     ) {
     }
 
@@ -37,11 +37,9 @@ class Accordion extends Component
     {
         return array_filter([
             'collapse',
-            'bg-base-100',
-            'border',
-            'border-base-300',
+            ...$this->borderClasses(),
             $this->iconClass(),
-            $this->stateClass(),
+            $this->openClass(),
         ]);
     }
 
@@ -49,7 +47,7 @@ class Accordion extends Component
     {
         return array_filter([
             'name' => $this->name,
-            'open' => $this->open ?: null,
+            'open' => $this->open === true ? true : null,
         ], fn ($value) => $value !== null && $value !== false);
     }
 
@@ -64,6 +62,19 @@ class Accordion extends Component
         return e($this->title ?? '');
     }
 
+    private function borderClasses(): array
+    {
+        if (! $this->border) {
+            return [];
+        }
+
+        return [
+            'border',
+            'border-base-300',
+            'bg-base-100',
+        ];
+    }
+
     private function iconClass(): ?string
     {
         return match ($this->icon) {
@@ -73,12 +84,13 @@ class Accordion extends Component
         };
     }
 
-    private function stateClass(): ?string
+    private function openClass(): ?string
     {
-        return match ($this->state) {
-            'open'  => 'collapse-open',
-            'close' => 'collapse-close',
+        return match ($this->open) {
+            true    => 'collapse-open',
+            false   => 'collapse-close',
             default => null,
         };
     }
+
 }

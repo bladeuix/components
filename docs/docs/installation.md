@@ -34,7 +34,7 @@ group: Docs
 </div>
 ```
 
-You need to have daisyUI (and therefore tailwindcss) installed in your laravel project. If you don't have daisyui, you can install it using your favorite package manager.:
+You need to have daisyUI (and therefore Tailwind CSS) installed in your Laravel project. If you don't have daisyUI, you can install it using your preferred package manager.
 
 ```bash
 npm i -D daisyui@latest
