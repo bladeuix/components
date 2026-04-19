@@ -22,7 +22,7 @@ class BreadcrumbLink extends Component
         }
 
         return <<<'blade'
-            <li><span aria-current="page">{{ $slot }}</span></li>
+            <li><span aria-current="page" {{ $attributes->class($classes())->merge() }}>{{ $slot }}</span></li>
         blade;
     }
 

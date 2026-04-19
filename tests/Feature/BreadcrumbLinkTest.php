@@ -19,9 +19,10 @@ it(description: 'can render breadcrumb link with href', closure: function () {
 it(description: 'can render breadcrumb link without href as current', closure: function () {
     $view = $this->blade(template: '<x-daisyui::breadcrumb-link>Current Page</x-daisyui::breadcrumb-link>');
 
+    $view->assertSee(value: '<span aria-current="page"', escape: false);
     $view->assertSeeHtmlInOrder(values: [
         '<li>',
-        '<span aria-current="page">',
+        '<span',
         'Current Page',
         '</span>',
         '</li>',
@@ -39,4 +40,12 @@ it(description: 'can render breadcrumb link with custom attributes', closure: fu
 
     $view->assertSee(value: 'target="_blank"', escape: false);
     $view->assertSee(value: 'id="home-link"', escape: false);
+});
+
+it(description: 'preserves custom attributes on current breadcrumb link', closure: function () {
+    $view = $this->blade(template: '<x-daisyui::breadcrumb-link class="font-medium" id="current">Current Page</x-daisyui::breadcrumb-link>');
+
+    $view->assertSee(value: 'class="font-medium"', escape: false);
+    $view->assertSee(value: 'id="current"', escape: false);
+    $view->assertSee(value: 'aria-current="page"', escape: false);
 });
