@@ -1,0 +1,113 @@
+<?php
+
+declare(strict_types=1);
+
+namespace BladeUix\DaisyUi\Tests\Feature;
+
+it(description: 'can render table with default classes', closure: function () {
+    $view = $this->blade(template: '<x-daisyui::table></x-daisyui::table>');
+
+    $view->assertSeeHtmlInOrder(values: [
+        '<table class="table">',
+        '<tbody></tbody>',
+        '</table>',
+    ]);
+});
+
+it(description: 'can render table with modifier classes', closure: function () {
+    $view = $this->blade(template: '<x-daisyui::table zebra pin-rows pin-cols></x-daisyui::table>');
+
+    $view->assertSee(value: 'class="table table-zebra table-pin-rows table-pin-cols"', escape: false);
+});
+
+it(description: 'can render table with size class', closure: function () {
+    $view = $this->blade(template: '<x-daisyui::table size="xs"></x-daisyui::table>');
+
+    $view->assertSee(value: '<table class="table table-xs">', escape: false);
+});
+
+it(description: 'can render table with thead and tfoot slots', closure: function () {
+    $view = $this->blade(template: <<<'BLADE'
+        <x-daisyui::table>
+            <x-slot:thead>
+                <x-daisyui::table-head-cell>Name</x-daisyui::table-head-cell>
+            </x-slot:thead>
+
+            <x-daisyui::table-row>
+                <x-daisyui::table-cell value="Cy Ganderton" />
+            </x-daisyui::table-row>
+
+            <x-slot:tfoot>
+                <x-daisyui::table-head-cell>Total</x-daisyui::table-head-cell>
+            </x-slot:tfoot>
+        </x-daisyui::table>
+    BLADE);
+
+    $view->assertSee(value: '<thead>', escape: false);
+    $view->assertSee(value: '<tr>', escape: false);
+    $view->assertSee(value: '<th >Name</th>', escape: false);
+    $view->assertSee(value: '<tbody>', escape: false);
+    $view->assertSee(value: '<td >Cy Ganderton</td>', escape: false);
+    $view->assertSee(value: '<tfoot>', escape: false);
+    $view->assertSee(value: '<th >Total</th>', escape: false);
+});
+
+it(description: 'renders empty thead and tfoot when slots are provided', closure: function () {
+    $view = $this->blade(template: <<<'BLADE'
+        <x-daisyui::table>
+            <x-slot:thead>
+            </x-slot:thead>
+
+            <x-daisyui::table-row>
+                <x-daisyui::table-cell value="Cy Ganderton" />
+            </x-daisyui::table-row>
+
+            <x-slot:tfoot>
+            </x-slot:tfoot>
+        </x-daisyui::table>
+    BLADE);
+
+    $view->assertSee(value: '<thead><tr></tr></thead>', escape: false);
+    $view->assertSee(value: '<tbody>', escape: false);
+    $view->assertSee(value: '<td >Cy Ganderton</td>', escape: false);
+    $view->assertSee(value: '</tbody>', escape: false);
+    $view->assertSee(value: '<tfoot><tr></tr></tfoot>', escape: false);
+});
+
+it(description: 'can render table with custom attributes and classes', closure: function () {
+    $view = $this->blade(template: '<x-daisyui::table id="main-table" class="w-full"></x-daisyui::table>');
+
+    $view->assertSee(value: 'id="main-table"', escape: false);
+    $view->assertSee(value: 'class="table w-full"', escape: false);
+});
+
+it(description: 'can render checkbox table example structure', closure: function () {
+    $view = $this->blade(template: <<<'BLADE'
+        <x-daisyui::table>
+            <x-slot:thead>
+                <x-daisyui::table-head-cell>
+                    <label>
+                        <input type="checkbox" class="checkbox" name="select-all" aria-label="Select all rows" />
+                    </label>
+                </x-daisyui::table-head-cell>
+                <x-daisyui::table-head-cell>Name</x-daisyui::table-head-cell>
+            </x-slot:thead>
+
+            <x-daisyui::table-row>
+                <x-daisyui::table-head-cell>
+                    <label>
+                        <input type="checkbox" class="checkbox" name="selected_rows[]" value="hart-hagerty" aria-label="Select Hart Hagerty" />
+                    </label>
+                </x-daisyui::table-head-cell>
+                <x-daisyui::table-cell value="Hart Hagerty" />
+            </x-daisyui::table-row>
+        </x-daisyui::table>
+    BLADE);
+
+    $view->assertSee(value: '<thead>', escape: false);
+    $view->assertSee(value: 'name="select-all"', escape: false);
+    $view->assertSee(value: '<th >Name</th>', escape: false);
+    $view->assertSee(value: '<tbody>', escape: false);
+    $view->assertSee(value: 'name="selected_rows[]"', escape: false);
+    $view->assertSee(value: '<td >Hart Hagerty</td>', escape: false);
+});
