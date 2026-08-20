@@ -32,6 +32,7 @@ class Avatar extends Component
                 'avatar',
                 $this->presenceClass(),
                 $this->hasAbbreviation() ? 'avatar-placeholder' : null,
+                $this->rounded ? 'rounded-full' : null,
             ])
         );
     }
