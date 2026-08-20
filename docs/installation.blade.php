@@ -1,6 +1,6 @@
 # Installation
 
-### Prerequisites
+## Prerequisites
 
 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
     <div class="flex flex-col gap-4 p-4 bg-base-200 rounded-xl border border-black/5">
@@ -33,7 +33,7 @@ You need to have daisyUI (and therefore Tailwind CSS) installed in your Laravel 
 npm i -D daisyui@latest
 ```
 
-### Package Installation
+## Package Installation
 
 Install the BladeUIX DaisyUI package via Composer:
 
@@ -41,7 +41,7 @@ Install the BladeUIX DaisyUI package via Composer:
 composer require bladeuix/daisyui
 ```
 
-### Configure Tailwind CSS
+## Configure Tailwind CSS
 
 - Ensure that `daisyui` tailwindcss plugin in installed.
 - `../../vendor/bladeuix/daisyui/src/View/Components/*.php` is included in tailwindcss scan files.
@@ -57,7 +57,7 @@ composer require bladeuix/daisyui
 /*Your other css utilities...*/
 ```
 
-### Basic Usage
+## Basic Usage
 
 Once everything is installed and configured, you can use the components in your Blade templates:
 
