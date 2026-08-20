@@ -89,11 +89,7 @@ Status is a really small icon to visually show the current status of an element,
 ## Advance
 
 ```html
-@php
-    $status = 'online';
-@endphp
-
-<div class="component-preview" x-data="{ status: '{{ $status }}' }">
+<div class="component-preview" x-data="{ status: 'online' }">
     <div class="flex items-center gap-4">
         <div class="flex items-center gap-2">
             <x-daisyui::status 
@@ -108,18 +104,14 @@ Status is a really small icon to visually show the current status of an element,
             </x-daisyui::status>
             <span x-text="status === 'online' ? 'Online' : 'Offline'"></span>
         </div>
-        <x-daisyui::button size="sm" @click="status = status === 'online' ? 'offline' : 'online'">
+        <x-daisyui::button size="sm" x-on:click="status = status === 'online' ? 'offline' : 'online'">
             Toggle Status
         </x-daisyui::button>
     </div>
 </div>
 ```
 
-@php
-    $status = 'online';
-@endphp
-
-<div class="component-preview" x-data="{ status: '{{ $status }}' }">
+<div class="component-preview" x-data="{ status: 'online' }">
     <div class="flex items-center gap-4">
         <div class="flex items-center gap-2">
             <x-daisyui::status 
@@ -134,7 +126,7 @@ Status is a really small icon to visually show the current status of an element,
             </x-daisyui::status>
             <span x-text="status === 'online' ? 'Online' : 'Offline'"></span>
         </div>
-        <x-daisyui::button size="sm" @click="status = status === 'online' ? 'offline' : 'online'">
+        <x-daisyui::button size="sm" x-on:click="status = status === 'online' ? 'offline' : 'online'">
             Toggle Status
         </x-daisyui::button>
     </div>

@@ -47,12 +47,9 @@ composer test
 
 ## Documentation
 
-Component documentation should be in `docs/components/{component}.md`.
-Each documentation file must include:
-- YAML frontmatter (`title`, `description`, `group`).
-- Component title (`# {Component}`) and description.
-- Basic usage example using ` ```html ` and ` ```html +parse `.
-- Detailed variation examples in subsections (e.g., `## {Component} sizes`).
+Documentation pages should be in `docs/{page}.blade.php`.
+Each page should use Markdown headings and fenced HTML examples, with Blade component markup used for rendered previews where applicable.
+Do not add YAML frontmatter.
 
 ## Bug Reports
 

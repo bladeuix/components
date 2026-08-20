@@ -99,41 +99,33 @@ Loading shows an animation to indicate that something is loading.
 ## Advance
 
 ```html
-@php
-    $isLoading = true;
-@endphp
-
-<div class="component-preview" x-data="{ isLoading: {{ $isLoading ? 'true' : 'false' }} }">
+<div class="component-preview" x-data="{ isLoading: true }">
     <x-daisyui::loading
             aria-label="Fetching your profile..."
             role="status"
             aria-live="polite"
             x-show="isLoading"
             x-cloak
-            style="opacity: 0.8;"
+            class="opacity-80"
     />
     <x-daisyui::button 
-            @click="isLoading = !isLoading"
-            x-text="isLoading ? 'Stop Loading' : 'Start Loading'"
+            x-on:click="isLoading = !isLoading"
     >
+        <span x-text="isLoading ? 'Stop Loading' : 'Start Loading'"></span>
     </x-daisyui::button>
 </div>
 ```
 
-@php
-    $isLoading = true;
-@endphp
-
-<div class="component-preview" x-data="{ isLoading: {{ $isLoading ? 'true' : 'false' }} }">
+<div class="component-preview" x-data="{ isLoading: true }">
     <x-daisyui::loading
             aria-label="Fetching your profile..."
             role="status"
             aria-live="polite"
             x-show="isLoading"
             x-cloak
-            style="opacity: 0.8;"
+            class="opacity-80"
     />
-    <x-daisyui::button @click="isLoading = !isLoading">
+    <x-daisyui::button x-on:click="isLoading = !isLoading">
         <span x-text="isLoading ? 'Stop Loading' : 'Start Loading'"></span>
     </x-daisyui::button>
 </div>

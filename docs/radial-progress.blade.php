@@ -90,13 +90,9 @@ Radial progress can be used to show the progress of a task or to show the passin
 ## Advance
 
 ```html
-@php
-    $progressValue = 70;
-@endphp
-
 <div 
         class="component-preview flex flex-col gap-4 items-center" 
-        x-data="{ progress: {{ $progressValue }} }"
+        x-data="{ progress: 70 }"
 >
     <x-daisyui::radial-progress 
         value="0" 
@@ -110,13 +106,13 @@ Radial progress can be used to show the progress of a task or to show the passin
     <div class="flex gap-2">
         <x-daisyui::button 
                 size="sm" 
-                @click="progress = Math.max(0, progress - 10)"
+                x-on:click="progress = Math.max(0, progress - 10)"
         >
             Decrease
         </x-daisyui::button>
         <x-daisyui::button 
                 size="sm" 
-                @click="progress = Math.min(100, progress + 10)"
+                x-on:click="progress = Math.min(100, progress + 10)"
         >
             Increase
         </x-daisyui::button>
@@ -124,17 +120,13 @@ Radial progress can be used to show the progress of a task or to show the passin
 </div>
 ```
 
-@php
-    $progressValue = 70;
-@endphp
-
-<div class="component-preview flex flex-col gap-4 items-center" x-data="{ progress: {{ $progressValue }} }">
+<div class="component-preview flex flex-col gap-4 items-center" x-data="{ progress: 70 }">
     <x-daisyui::radial-progress value="0" x-bind:value="progress" x-bind:style="'--value:' + progress" class="text-primary">
         <span x-text="progress + '%'"></span>
     </x-daisyui::radial-progress>
     
     <div class="flex gap-2">
-        <x-daisyui::button size="sm" @click="progress = Math.max(0, progress - 10)">Decrease</x-daisyui::button>
-        <x-daisyui::button size="sm" @click="progress = Math.min(100, progress + 10)">Increase</x-daisyui::button>
+        <x-daisyui::button size="sm" x-on:click="progress = Math.max(0, progress - 10)">Decrease</x-daisyui::button>
+        <x-daisyui::button size="sm" x-on:click="progress = Math.min(100, progress + 10)">Increase</x-daisyui::button>
     </div>
 </div>
