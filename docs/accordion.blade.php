@@ -66,9 +66,7 @@ Accordion displays an expandable/collapsible content section.
 </div>
 
 
-## Border
-
-### Default
+## Border Default
 
 ```html
 <x-daisyui::accordion title="Bordered accordion">
@@ -83,7 +81,7 @@ Accordion displays an expandable/collapsible content section.
 </div>
 
 
-### Without
+## Border Without
 
 ```html
 <x-daisyui::accordion :border="false" title="Borderless accordion">
@@ -98,7 +96,7 @@ Accordion displays an expandable/collapsible content section.
 </div>
 
 
-### Custom
+## Border Custom
 
 ```html
 <x-daisyui::accordion 
@@ -117,9 +115,7 @@ Accordion displays an expandable/collapsible content section.
 </div>
 
 
-## Icon Variants
-
-### Arrow Icon
+## Icon Variants Arrow Icon
 
 ```html
 <x-daisyui::accordion icon="arrow" title="With Arrow Icon">
@@ -134,7 +130,7 @@ Accordion displays an expandable/collapsible content section.
 </div>
 
 
-### Plus Icon
+## Icon Variants Plus Icon
 
 ```html
 <x-daisyui::accordion icon="plus" title="With Plus Icon">
@@ -149,9 +145,7 @@ Accordion displays an expandable/collapsible content section.
 </div>
 
 
-## Open State
-
-### Forced Open
+## Open State Forced Open
 
 ```html
 <x-daisyui::accordion open title="This is forced open">
@@ -166,7 +160,7 @@ Accordion displays an expandable/collapsible content section.
 </div>
 
 
-### Closed By Default
+## Open State Closed By Default
 
 ```html
 <x-daisyui::accordion title="Closed by default">
@@ -181,7 +175,7 @@ Accordion displays an expandable/collapsible content section.
 </div>
 
 
-### Forced Close
+## Open State Forced Close
 
 ```html
 <x-daisyui::accordion :open="false" title="Forced close">
