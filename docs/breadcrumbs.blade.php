@@ -1,9 +1,3 @@
----
-title: Breadcrumbs
-description: Breadcrumbs help users navigate through the website hierarchy.
-group: Components
----
-
 # Breadcrumbs
 
 Breadcrumbs help users navigate through the website hierarchy.
@@ -16,7 +10,6 @@ Breadcrumbs help users navigate through the website hierarchy.
 </x-daisyui::breadcrumbs>
 ```
 
-```html +parse
 <div class="component-preview">
     <x-daisyui::breadcrumbs>
         <x-daisyui::breadcrumb-link href="#">Home</x-daisyui::breadcrumb-link>
@@ -24,7 +17,7 @@ Breadcrumbs help users navigate through the website hierarchy.
         <x-daisyui::breadcrumb-link>Add Document</x-daisyui::breadcrumb-link>
     </x-daisyui::breadcrumbs>
 </div>
-```
+
 
 ## With Icons
 
@@ -45,7 +38,6 @@ Breadcrumbs help users navigate through the website hierarchy.
 </x-daisyui::breadcrumbs>
 ```
 
-```html +parse
 <div class="component-preview">
     <x-daisyui::breadcrumbs>
         <x-daisyui::breadcrumb-link href="#">
@@ -62,7 +54,7 @@ Breadcrumbs help users navigate through the website hierarchy.
         </x-daisyui::breadcrumb-link>
     </x-daisyui::breadcrumbs>
 </div>
-```
+
 
 ## With Max Width
 
@@ -78,7 +70,6 @@ If you set max-width or the list gets larger than the container it will scroll.
 </x-daisyui::breadcrumbs>
 ```
 
-```html +parse
 <div class="component-preview">
     <x-daisyui::breadcrumbs class="max-w-xs">
         <x-daisyui::breadcrumb-link href="#">Long text 1</x-daisyui::breadcrumb-link>
@@ -88,4 +79,3 @@ If you set max-width or the list gets larger than the container it will scroll.
         <x-daisyui::breadcrumb-link>Long text 5</x-daisyui::breadcrumb-link>
     </x-daisyui::breadcrumbs>
 </div>
-```

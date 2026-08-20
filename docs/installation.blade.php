@@ -1,14 +1,7 @@
----
-title: Installation
-description: To install BladeUIX DaisyUI, you can use Composer to require the package. This will add the package to your Laravel project and allow you to use the components in your Blade templates.
-group: Docs
----
-
 # Installation
 
 ### Prerequisites
 
-```html +parse
 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
     <div class="flex flex-col gap-4 p-4 bg-base-200 rounded-xl border border-black/5">
         <svg class="size-10" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M41 9.88889L33 5.44444L25 9.88889M41 9.88889L33 14.3333M41 9.88889V18.7778L33 23.2222M25 9.88889V18.7778M25 9.88889L33 14.3333M25 18.7778L33 23.2222M25 18.7778L9 27.6667M33 23.2222V32.1111L17 41M33 23.2222V14.3333M33 23.2222L17 32.1111M9 27.6667L17 32.1111M9 27.6667V9.88889M1 5.44444L9 1L17 5.44444M1 5.44444V32.1111L17 41M1 5.44444L9 9.88889M17 41V32.1111M9 9.88889L17 5.44444M17 5.44444V23.2222" stroke="#F53003" stroke-width="1.5"></path></svg>
@@ -32,7 +25,7 @@ group: Docs
         </div>
     </div>
 </div>
-```
+
 
 You need to have daisyUI (and therefore Tailwind CSS) installed in your Laravel project. If you don't have daisyUI, you can install it using your preferred package manager.
 

@@ -1,9 +1,3 @@
----
-title: Accordion
-description: Accordion displays an expandable/collapsible content section.
-group: Components
----
-
 # Accordion
 
 Accordion displays an expandable/collapsible content section.
@@ -14,13 +8,12 @@ Accordion displays an expandable/collapsible content section.
 </x-daisyui::accordion>
 ```
 
-```html +parse
 <div class="component-preview">
     <x-daisyui::accordion title="How do I create an account?">
         Click the "Sign Up" button in the top right corner and follow the registration process.
     </x-daisyui::accordion>
 </div>
-```
+
 
 ## Title Slot
 
@@ -33,7 +26,6 @@ Accordion displays an expandable/collapsible content section.
 </x-daisyui::accordion>
 ```
 
-```html +parse
 <div class="component-preview">
     <x-daisyui::accordion name="my-accordion">
         <x-slot:title>
@@ -42,7 +34,7 @@ Accordion displays an expandable/collapsible content section.
         Click on "Forgot Password" on the login page and follow the instructions sent to your email.
     </x-daisyui::accordion>
 </div>
-```
+
 
 ## Grouped
 
@@ -53,12 +45,14 @@ Accordion displays an expandable/collapsible content section.
 <x-daisyui::accordion name="faq-accordion" title="I forgot my password. What should I do?">
     Click on "Forgot Password" on the login page and follow the instructions sent to your email.
 </x-daisyui::accordion>
+```
+
+```html
 <x-daisyui::accordion name="faq-accordion" title="How do I update my profile information?">
     Go to "My Account" settings and select "Edit Profile" to make changes.
 </x-daisyui::accordion>
 ```
 
-```html +parse
 <div class="component-preview">
     <x-daisyui::accordion name="faq-accordion" title="How do I create an account?">
         Click the "Sign Up" button in the top right corner and follow the registration process.
@@ -70,7 +64,7 @@ Accordion displays an expandable/collapsible content section.
         Go to "My Account" settings and select "Edit Profile" to make changes.
     </x-daisyui::accordion>
 </div>
-```
+
 
 ## Border
 
@@ -82,13 +76,12 @@ Accordion displays an expandable/collapsible content section.
 </x-daisyui::accordion>
 ```
 
-```html +parse
 <div class="component-preview">
     <x-daisyui::accordion title="Bordered accordion">
         This accordion uses the default border and background classes.
     </x-daisyui::accordion>
 </div>
-```
+
 
 ### Without
 
@@ -98,13 +91,12 @@ Accordion displays an expandable/collapsible content section.
 </x-daisyui::accordion>
 ```
 
-```html +parse
 <div class="component-preview">
     <x-daisyui::accordion :border="false" title="Borderless accordion">
         This accordion removes the default border and background classes.
     </x-daisyui::accordion>
 </div>
-```
+
 
 ### Custom
 
@@ -118,13 +110,12 @@ Accordion displays an expandable/collapsible content section.
 </x-daisyui::accordion>
 ```
 
-```html +parse
 <div class="component-preview">
     <x-daisyui::accordion :border="false" class="border border-primary bg-base-200" title="Custom styled accordion">
         This accordion uses custom border and background utilities.
     </x-daisyui::accordion>
 </div>
-```
+
 
 ## Icon Variants
 
@@ -136,13 +127,12 @@ Accordion displays an expandable/collapsible content section.
 </x-daisyui::accordion>
 ```
 
-```html +parse
 <div class="component-preview">
     <x-daisyui::accordion icon="arrow" title="With Arrow Icon">
         This accordion has an arrow icon.
     </x-daisyui::accordion>
 </div>
-```
+
 
 ### Plus Icon
 
@@ -152,13 +142,12 @@ Accordion displays an expandable/collapsible content section.
 </x-daisyui::accordion>
 ```
 
-```html +parse
 <div class="component-preview">
     <x-daisyui::accordion icon="plus" title="With Plus Icon">
         This accordion has a plus icon.
     </x-daisyui::accordion>
 </div>
-```
+
 
 ## Open State
 
@@ -170,13 +159,12 @@ Accordion displays an expandable/collapsible content section.
 </x-daisyui::accordion>
 ```
 
-```html +parse
 <div class="component-preview">
     <x-daisyui::accordion open title="This is forced open">
         This accordion is open by default.
     </x-daisyui::accordion>
 </div>
-```
+
 
 ### Closed By Default
 
@@ -186,13 +174,12 @@ Accordion displays an expandable/collapsible content section.
 </x-daisyui::accordion>
 ```
 
-```html +parse
 <div class="component-preview">
     <x-daisyui::accordion title="Closed by default">
         This accordion uses the default interactive state with no forced modifier.
     </x-daisyui::accordion>
 </div>
-```
+
 
 ### Forced Close
 
@@ -202,13 +189,12 @@ Accordion displays an expandable/collapsible content section.
 </x-daisyui::accordion>
 ```
 
-```html +parse
 <div class="component-preview">
     <x-daisyui::accordion :open="false" title="Forced close">
         This accordion uses the `collapse-close` modifier.
     </x-daisyui::accordion>
 </div>
-```
+
 
 ## Advance
 
@@ -239,7 +225,6 @@ Accordion displays an expandable/collapsible content section.
 </x-daisyui::accordion>
 ```
 
-```html +parse
 <div class="component-preview">
     <x-daisyui::accordion 
         name="advance-accordion" 
@@ -266,4 +251,3 @@ Accordion displays an expandable/collapsible content section.
         </div>
     </x-daisyui::accordion>
 </div>
-```

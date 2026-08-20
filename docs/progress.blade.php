@@ -1,9 +1,3 @@
----
-title: Progress
-description: Progress bar can be used to show the progress of a task or to show the passing of time.
-group: Components
----
-
 # Progress
 
 Progress bar can be used to show the progress of a task or to show the passing of time.
@@ -12,11 +6,10 @@ Progress bar can be used to show the progress of a task or to show the passing o
 <x-daisyui::progress value="10" max="100" class="w-56" />
 ```
 
-```html +parse
 <div class="component-preview flex flex-col gap-2 items-center">
-    <x-daisyui::progress :value="rand(20,80)" max="100" class="w-56" />
+    <x-daisyui::progress value="50" max="100" class="w-56" />
 </div>
-```
+
 
 ## Progress colors
 
@@ -29,22 +22,24 @@ Progress bar can be used to show the progress of a task or to show the passing o
 <x-daisyui::progress color="info" value="10" max="100" class="w-56" />
 <x-daisyui::progress color="success" value="40" max="100" class="w-56" />
 <x-daisyui::progress color="warning" value="70" max="100" class="w-56" />
+```
+
+```html
 <x-daisyui::progress color="error" value="100" max="100" class="w-56" />
 ```
 
-```html +parse
 <div class="component-preview flex flex-col gap-2 items-center">
-    <x-daisyui::progress color="primary" :value="rand(20,80)" max="100" class="w-56" />
-    <x-daisyui::progress color="secondary" :value="rand(20,80)" max="100" class="w-56" />
-    <x-daisyui::progress color="accent" :value="rand(20,80)" max="100" class="w-56" />
-    <x-daisyui::progress color="neutral" :value="rand(20,80)" max="100" class="w-56" />
+    <x-daisyui::progress color="primary" value="10" max="100" class="w-56" />
+    <x-daisyui::progress color="secondary" value="40" max="100" class="w-56" />
+    <x-daisyui::progress color="accent" value="70" max="100" class="w-56" />
+    <x-daisyui::progress color="neutral" value="100" max="100" class="w-56" />
     <br>
-    <x-daisyui::progress color="info" :value="rand(20,80)" max="100" class="w-56" />
-    <x-daisyui::progress color="success" :value="rand(20,80)" max="100" class="w-56" />
-    <x-daisyui::progress color="warning" :value="rand(20,80)" max="100" class="w-56" />
-    <x-daisyui::progress color="error" :value="rand(20,80)" max="100" class="w-56" />
+    <x-daisyui::progress color="info" value="10" max="100" class="w-56" />
+    <x-daisyui::progress color="success" value="40" max="100" class="w-56" />
+    <x-daisyui::progress color="warning" value="70" max="100" class="w-56" />
+    <x-daisyui::progress color="error" value="100" max="100" class="w-56" />
 </div>
-```
+
 
 ## Indeterminate (without value)
 
@@ -52,11 +47,10 @@ Progress bar can be used to show the progress of a task or to show the passing o
 <x-daisyui::progress class="w-56" />
 ```
 
-```html +parse
 <div class="component-preview flex flex-col gap-2 items-center">
     <x-daisyui::progress class="w-56" />
 </div>
-```
+
 
 ## Responsive progress
 
@@ -68,26 +62,21 @@ Progress bar can be used to show the progress of a task or to show the passing o
 />
 ```
 
-```html +parse
 <div class="component-preview flex flex-col gap-2 items-center">
     <x-daisyui::progress 
-            :value="rand(20,80)"  
+            value="40"  
             max="100" 
             class="w-24 md:w-56 lg:w-80"
     />
 </div>
-```
+
 
 ## Advance
 
 ```html
-@php
-    $progressValue = 50;
-@endphp
-
 <div 
         class="component-preview flex flex-col gap-4 items-center" 
-        x-data="{ progress: {{ $progressValue }} }"
+        x-data="{ progress: 50 }"
 >
     <x-daisyui::progress 
             value="0" 
@@ -100,13 +89,13 @@ Progress bar can be used to show the progress of a task or to show the passing o
     <div class="flex gap-2">
         <x-daisyui::button 
                 size="sm" 
-                @click="progress = Math.max(0, progress - 10)"
+                x-on:click="progress = Math.max(0, progress - 10)"
         >
             Decrease
         </x-daisyui::button>
         <x-daisyui::button 
                 size="sm" 
-                @click="progress = Math.min(100, progress + 10)"
+                x-on:click="progress = Math.min(100, progress + 10)"
         >
             Increase
         </x-daisyui::button>
@@ -116,17 +105,11 @@ Progress bar can be used to show the progress of a task or to show the passing o
 </div>
 ```
 
-```html +parse
-@php
-    $progressValue = 50;
-@endphp
-
-<div class="component-preview flex flex-col gap-4 items-center" x-data="{ progress: {{ $progressValue }} }">
+<div class="component-preview flex flex-col gap-4 items-center" x-data="{ progress: 50 }">
     <x-daisyui::progress value="0" x-bind:value="progress" max="100" color="primary" />
     <div class="flex gap-2">
-        <x-daisyui::button size="sm" @click="progress = Math.max(0, progress - 10)">Decrease</x-daisyui::button>
-        <x-daisyui::button size="sm" @click="progress = Math.min(100, progress + 10)">Increase</x-daisyui::button>
+        <x-daisyui::button size="sm" x-on:click="progress = Math.max(0, progress - 10)">Decrease</x-daisyui::button>
+        <x-daisyui::button size="sm" x-on:click="progress = Math.min(100, progress + 10)">Increase</x-daisyui::button>
     </div>
     <span x-text="`Current progress: ${progress}%`" class="text-sm font-bold"></span>
 </div>
-```

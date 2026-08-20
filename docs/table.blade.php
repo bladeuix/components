@@ -1,9 +1,3 @@
----
-title: Table
-description: Table can be used to show a list of data in a table format.
-group: Components
----
-
 # Table
 
 Table can be used to show a list of data in a table format.
@@ -33,7 +27,6 @@ Table can be used to show a list of data in a table format.
 </x-daisyui::table>
 ```
 
-```html +parse
 <div class="overflow-x-auto">
     <x-daisyui::table>
         <x-slot:thead>
@@ -58,7 +51,7 @@ Table can be used to show a list of data in a table format.
         </x-daisyui::table-row>
     </x-daisyui::table>
 </div>
-```
+
 
 ## Border and background
 
@@ -89,7 +82,6 @@ Table can be used to show a list of data in a table format.
 </div>
 ```
 
-```html +parse
 <div class="overflow-x-auto rounded-box border border-base-content/5 bg-base-100">
     <x-daisyui::table>
         <x-slot:thead>
@@ -114,7 +106,7 @@ Table can be used to show a list of data in a table format.
         </x-daisyui::table-row>
     </x-daisyui::table>
 </div>
-```
+
 
 ## Custom HTML
 
@@ -149,7 +141,6 @@ Use `value` for plain text cells and the default slot when the cell needs richer
 </x-daisyui::table>
 ```
 
-```html +parse
 <div class="overflow-x-auto">
     <x-daisyui::table>
         <x-slot:thead>
@@ -178,7 +169,7 @@ Use `value` for plain text cells and the default slot when the cell needs richer
         </x-daisyui::table-row>
     </x-daisyui::table>
 </div>
-```
+
 
 ## Active row
 
@@ -207,7 +198,6 @@ Use `value` for plain text cells and the default slot when the cell needs richer
 </x-daisyui::table>
 ```
 
-```html +parse
 <div class="overflow-x-auto">
     <x-daisyui::table>
         <x-slot:thead>
@@ -232,7 +222,7 @@ Use `value` for plain text cells and the default slot when the cell needs richer
         </x-daisyui::table-row>
     </x-daisyui::table>
 </div>
-```
+
 
 ## Hover row
 
@@ -261,7 +251,6 @@ Use `value` for plain text cells and the default slot when the cell needs richer
 </x-daisyui::table>
 ```
 
-```html +parse
 <div class="overflow-x-auto">
     <x-daisyui::table>
         <x-slot:thead>
@@ -286,7 +275,7 @@ Use `value` for plain text cells and the default slot when the cell needs richer
         </x-daisyui::table-row>
     </x-daisyui::table>
 </div>
-```
+
 
 ## Zebra
 
@@ -315,7 +304,6 @@ Use `value` for plain text cells and the default slot when the cell needs richer
 </x-daisyui::table>
 ```
 
-```html +parse
 <div class="overflow-x-auto">
     <x-daisyui::table zebra>
         <x-slot:thead>
@@ -340,7 +328,7 @@ Use `value` for plain text cells and the default slot when the cell needs richer
         </x-daisyui::table-row>
     </x-daisyui::table>
 </div>
-```
+
 
 ## Checkbox
 
@@ -378,7 +366,6 @@ Use `value` for plain text cells and the default slot when the cell needs richer
 </x-daisyui::table>
 ```
 
-```html +parse
 <div class="overflow-x-auto">
     <x-daisyui::table>
         <x-slot:thead>
@@ -412,7 +399,7 @@ Use `value` for plain text cells and the default slot when the cell needs richer
         </x-daisyui::table-row>
     </x-daisyui::table>
 </div>
-```
+
 
 ## Sizes
 
@@ -439,7 +426,6 @@ Use `value` for plain text cells and the default slot when the cell needs richer
 </div>
 ```
 
-```html +parse
 <div class="overflow-x-auto">
     <x-daisyui::table size="xs">
         <x-slot:thead>
@@ -461,7 +447,7 @@ Use `value` for plain text cells and the default slot when the cell needs richer
         </x-daisyui::table-row>
     </x-daisyui::table>
 </div>
-```
+
 
 ## Pinned rows and cols
 
@@ -519,7 +505,6 @@ Use `value` for plain text cells and the default slot when the cell needs richer
 </div>
 ```
 
-```html +parse
 <div class="overflow-x-auto h-96 w-96">
     <x-daisyui::table size="xs" pin-rows pin-cols>
         <x-slot:thead>
@@ -571,4 +556,3 @@ Use `value` for plain text cells and the default slot when the cell needs richer
         </x-slot:tfoot>
     </x-daisyui::table>
 </div>
-```

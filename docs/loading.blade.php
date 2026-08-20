@@ -1,9 +1,3 @@
----
-title: Loading
-description: Loading shows an animation to indicate that something is loading.
-group: Components
----
-
 # Loading
 
 Loading shows an animation to indicate that something is loading.
@@ -12,11 +6,10 @@ Loading shows an animation to indicate that something is loading.
 <x-daisyui::loading />
 ```
 
-```html +parse
 <div class="component-preview">
     <x-daisyui::loading />
 </div>
-```
+
 
 ## Loading types
 
@@ -26,10 +19,12 @@ Loading shows an animation to indicate that something is loading.
 <x-daisyui::loading type="ring" />
 <x-daisyui::loading type="ball" />
 <x-daisyui::loading type="bars" />
+```
+
+```html
 <x-daisyui::loading type="infinity" />
 ```
 
-```html +parse
 <div class="component-preview">
     <x-daisyui::loading type="spinner" />
     <x-daisyui::loading type="dots" />
@@ -38,7 +33,7 @@ Loading shows an animation to indicate that something is loading.
     <x-daisyui::loading type="bars" />
     <x-daisyui::loading type="infinity" />
 </div>
-```
+
 
 ## Loading sizes
 
@@ -47,10 +42,12 @@ Loading shows an animation to indicate that something is loading.
 <x-daisyui::loading size="sm" />
 <x-daisyui::loading size="md" />
 <x-daisyui::loading size="lg" />
+```
+
+```html
 <x-daisyui::loading size="xl" />
 ```
 
-```html +parse
 <div class="component-preview">
     <x-daisyui::loading size="xs" />
     <x-daisyui::loading size="sm" />
@@ -58,7 +55,7 @@ Loading shows an animation to indicate that something is loading.
     <x-daisyui::loading size="lg" />
     <x-daisyui::loading size="xl" />
 </div>
-```
+
 
 ## Loading colors
 
@@ -70,10 +67,12 @@ Loading shows an animation to indicate that something is loading.
 <x-daisyui::loading color="info" />
 <x-daisyui::loading color="success" />
 <x-daisyui::loading color="warning" />
+```
+
+```html
 <x-daisyui::loading color="error" />
 ```
 
-```html +parse
 <div class="component-preview">
     <x-daisyui::loading color="primary" />
     <x-daisyui::loading color="secondary" />
@@ -84,7 +83,7 @@ Loading shows an animation to indicate that something is loading.
     <x-daisyui::loading color="warning" />
     <x-daisyui::loading color="error" />
 </div>
-```
+
 
 ## Responsive loading
 
@@ -92,52 +91,41 @@ Loading shows an animation to indicate that something is loading.
 <x-daisyui::loading class="loading-xs md:loading-sm lg:loading-md xl:loading-lg" />
 ```
 
-```html +parse
 <div class="component-preview">
     <x-daisyui::loading class="loading-xs md:loading-sm lg:loading-md xl:loading-lg" />
 </div>
-```
+
 
 ## Advance
 
 ```html
-@php
-    $isLoading = true;
-@endphp
-
-<div class="component-preview" x-data="{ isLoading: {{ $isLoading ? 'true' : 'false' }} }">
+<div class="component-preview" x-data="{ isLoading: true }">
     <x-daisyui::loading
             aria-label="Fetching your profile..."
             role="status"
             aria-live="polite"
             x-show="isLoading"
             x-cloak
-            style="opacity: 0.8;"
+            class="opacity-80"
     />
     <x-daisyui::button 
-            @click="isLoading = !isLoading"
-            x-text="isLoading ? 'Stop Loading' : 'Start Loading'"
+            x-on:click="isLoading = !isLoading"
     >
-    </x-daisyui::button>
-</div>
-```
-
-```html +parse
-@php
-    $isLoading = true;
-@endphp
-
-<div class="component-preview" x-data="{ isLoading: {{ $isLoading ? 'true' : 'false' }} }">
-    <x-daisyui::loading
-            aria-label="Fetching your profile..."
-            role="status"
-            aria-live="polite"
-            x-show="isLoading"
-            x-cloak
-            style="opacity: 0.8;"
-    />
-    <x-daisyui::button @click="isLoading = !isLoading">
         <span x-text="isLoading ? 'Stop Loading' : 'Start Loading'"></span>
     </x-daisyui::button>
 </div>
 ```
+
+<div class="component-preview" x-data="{ isLoading: true }">
+    <x-daisyui::loading
+            aria-label="Fetching your profile..."
+            role="status"
+            aria-live="polite"
+            x-show="isLoading"
+            x-cloak
+            class="opacity-80"
+    />
+    <x-daisyui::button x-on:click="isLoading = !isLoading">
+        <span x-text="isLoading ? 'Stop Loading' : 'Start Loading'"></span>
+    </x-daisyui::button>
+</div>
