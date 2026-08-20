@@ -1,4 +1,4 @@
-# Getting Started
+# Introduction
 
 BladeUIX DaisyUI is a set of components that provides a simple and beautiful way to use [DaisyUI](https://daisyui.com/) in Laravel Blade templates.
 
@@ -6,7 +6,7 @@ BladeUIX DaisyUI is a set of components that provides a simple and beautiful way
 
 [DaisyUI](https://daisyui.com/) is a popular [Tailwind CSS](https://tailwindcss.com/) plugin that adds component classes to your Tailwind CSS project. Instead of writing long strings of utility classes for every element, you can use semantic class names like `btn`, `card`, `alert`, and many others.
 
-### Key DaisyUI Benefits:
+### Key DaisyUI Benefits
 
 - **Fewer Class Names:** It reduces the number of classes you write by up to 88%, making your HTML much cleaner.
 - **Faster Development:** It provides pre-designed components, so you don't have to build every basic UI element from scratch.
@@ -19,7 +19,7 @@ BladeUIX DaisyUI is a set of components that provides a simple and beautiful way
 
 BladeUIX DaisyUI brings the power of DaisyUI directly into your Laravel applications through native Blade components. It abstracts the class management into clean, semantic components that feel right at home in Laravel.
 
-### Benefits for Laravel Development:
+### Benefits for Laravel Development
 
 - **Native Blade Components:** Use components directly in your views with a clean syntax: `<x-daisyui::button color="primary">Click Me</x-daisyui::button>`.
 - **Semantic Props:** Control component styles using simple props like `color`, `size`, `variant`, `shape`, and `state`. No more messy class strings in your views.
