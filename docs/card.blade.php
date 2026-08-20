@@ -174,6 +174,7 @@ Use `image-full` for a background image or `side` to place the image beside the 
 
 <div class="component-preview">
     <x-daisyui::card title="Card title" image-src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" image-alt="Shoes" class="w-96 bg-base-100 shadow-sm">
+        <p>A card with a badge in its content.</p>
         <x-slot:actions>
             <span class="badge badge-outline">Fashion</span><span class="badge badge-outline">Products</span>
         </x-slot:actions>
@@ -239,19 +240,23 @@ Place the image after the body with `image-bottom`.
 ## Centered card
 
 ```html
-<x-daisyui::card title="Card title" class="w-96 bg-base-100 shadow-sm text-center">
-    <p>A card with centered content and padded image.</p>
+<x-daisyui::card title="Card title" image-src="..." image-alt="Shoes" class="w-96 bg-base-100 shadow-sm text-center">
+    <p>A card with centered content.</p>
     <x-slot:actions>
-        <x-daisyui::button color="primary">Buy now</x-daisyui::button>
+        <div class="w-full text-center">
+            <x-daisyui::button color="primary">Buy now</x-daisyui::button>
+        </div>
     </x-slot:actions>
 </x-daisyui::card>
 ```
 
 <div class="component-preview">
     <x-daisyui::card title="Card title" image-src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" image-alt="Shoes" class="w-96 bg-base-100 shadow-sm text-center">
-        <p>A card with centered content and padded image.</p>
+        <p>A card with centered content.</p>
         <x-slot:actions>
-            <x-daisyui::button color="primary">Buy now</x-daisyui::button>
+            <div class="w-full text-center">
+                <x-daisyui::button color="primary">Buy now</x-daisyui::button>
+            </div>
         </x-slot:actions>
     </x-daisyui::card>
 </div>
