@@ -9,31 +9,42 @@ use Illuminate\View\Component;
 class Avatar extends Component
 {
     public function __construct(
-        public bool $group = false,
-        public ?string $status = null,
-        public bool $placeholder = false,
+        public ?string $presence = null,
+        public ?string $abbreviation = null,
+        public ?string $src = null,
+        public ?string $alt = null,
+        public bool    $rounded = false,
     ) {
     }
 
     public function render(): string
     {
         return <<<'blade'
-            <div {{ $attributes->class($classes())->merge() }}>{{ $slot }}</div>
+            <div {{ $attributes->class($classes())->merge() }}>@if ($hasAbbreviation())@if ($rounded)<div class="rounded-full overflow-hidden">@else<div>@endif<span>{{ $abbreviation }}</span></div>@elseif ($rounded)<img src="{{ $src }}" alt="{{ $alt }}" class="rounded-full overflow-hidden">@else<img src="{{ $src }}" alt="{{ $alt }}">@endif</div>
         blade;
     }
 
-    public function classes(): array
+    public function classes(): string
     {
-        return array_filter([
-            $this->group ? 'avatar-group' : 'avatar',
-            $this->statusClass(),
-            $this->placeholder ? 'avatar-placeholder' : null,
-        ]);
+        return implode(
+            separator: ' ',
+            array: array_filter([
+                'avatar',
+                $this->presenceClass(),
+                $this->hasAbbreviation() ? 'avatar-placeholder' : null,
+                $this->rounded ? 'rounded-full' : null,
+            ])
+        );
     }
 
-    private function statusClass(): ?string
+    public function hasAbbreviation(): bool
     {
-        return match ($this->status) {
+        return $this->abbreviation !== null && $this->abbreviation !== '';
+    }
+
+    private function presenceClass(): ?string
+    {
+        return match ($this->presence) {
             'online'  => 'avatar-online',
             'offline' => 'avatar-offline',
             default   => null,
