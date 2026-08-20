@@ -4,64 +4,64 @@ Avatars show a thumbnail representation of an individual or business in an inter
 
 ```html
 <x-daisyui::avatar
-        src="https://img.daisyui.com/images/profile/demo/batperson@192.webp"
+        image-src="..."
         class="size-24"
-        alt="Avatar"
+        image-alt="Avatar"
 />
 ```
 
 <div class="component-preview">
-    <x-daisyui::avatar src="https://img.daisyui.com/images/profile/demo/batperson@192.webp" alt="Avatar" class="size-24" />
+    <x-daisyui::avatar image-src="https://img.daisyui.com/images/profile/demo/batperson@192.webp" image-alt="Avatar" class="size-24" />
 </div>
 
 ## Rounded avatars
 
 ```html
 <x-daisyui::avatar
-        src="https://img.daisyui.com/images/profile/demo/yellingwoman@192.webp"
-        alt="Rounded avatar"
+        image-src="..."
+        image-alt="Rounded avatar"
         class="size-24"
         rounded
 />
 ```
 
 <div class="component-preview flex flex-wrap items-center gap-6">
-    <x-daisyui::avatar src="https://img.daisyui.com/images/profile/demo/yellingwoman@192.webp" alt="Rounded avatar" rounded class="size-24" />
+    <x-daisyui::avatar image-src="https://img.daisyui.com/images/profile/demo/yellingwoman@192.webp" image-alt="Rounded avatar" rounded class="size-24" />
 </div>
 
 ## Custom sizes
 
 ```html
 <x-daisyui::avatar
-    src="https://img.daisyui.com/images/profile/demo/superperson@192.webp"
-    alt="Large avatar"
+    image-src="..."
+    image-alt="Large avatar"
     class="size-24"
 />
 <x-daisyui::avatar
-    src="https://img.daisyui.com/images/profile/demo/superperson@192.webp"
-    alt="Medium avatar"
+    image-src="..."
+    image-alt="Medium avatar"
     class="size-16"
 />
 <x-daisyui::avatar
-    src="https://img.daisyui.com/images/profile/demo/superperson@192.webp"
-    alt="Small avatar"
+    image-src="..."
+    image-alt="Small avatar"
     class="size-12"
 />
 ```
 
 ```html
 <x-daisyui::avatar
-    src="https://img.daisyui.com/images/profile/demo/superperson@192.webp"
-    alt="Extra small avatar"
+    image-src="..."
+    image-alt="Extra small avatar"
     class="size-8"
 />
 ```
 
 <div class="component-preview flex items-center gap-4">
-    <x-daisyui::avatar src="https://img.daisyui.com/images/profile/demo/superperson@192.webp" alt="Large avatar" class="size-24 rounded" />
-    <x-daisyui::avatar src="https://img.daisyui.com/images/profile/demo/superperson@192.webp" alt="Medium avatar" class="size-16 rounded" />
-    <x-daisyui::avatar src="https://img.daisyui.com/images/profile/demo/superperson@192.webp" alt="Small avatar" class="size-12 rounded" />
-    <x-daisyui::avatar src="https://img.daisyui.com/images/profile/demo/superperson@192.webp" alt="Extra small avatar" class="size-8 rounded" />
+    <x-daisyui::avatar image-src="https://img.daisyui.com/images/profile/demo/superperson@192.webp" image-alt="Large avatar" class="size-24 rounded" />
+    <x-daisyui::avatar image-src="https://img.daisyui.com/images/profile/demo/superperson@192.webp" image-alt="Medium avatar" class="size-16 rounded" />
+    <x-daisyui::avatar image-src="https://img.daisyui.com/images/profile/demo/superperson@192.webp" image-alt="Small avatar" class="size-12 rounded" />
+    <x-daisyui::avatar image-src="https://img.daisyui.com/images/profile/demo/superperson@192.webp" image-alt="Extra small avatar" class="size-8 rounded" />
 </div>
 
 
@@ -70,18 +70,18 @@ Avatars show a thumbnail representation of an individual or business in an inter
 ```html
 <x-daisyui::avatar-group class="-space-x-6">
     <x-daisyui::avatar
-        src="https://img.daisyui.com/images/profile/demo/batperson@192.webp"
-        alt="Avatar one"
+        image-src="..."
+        image-alt="Avatar one"
         class="size-12"
     />
     <x-daisyui::avatar
-        src="https://img.daisyui.com/images/profile/demo/spiderperson@192.webp"
-        alt="Avatar two"
+        image-src="..."
+        image-alt="Avatar two"
         class="size-12"
     />
     <x-daisyui::avatar
-        src="https://img.daisyui.com/images/profile/demo/wonderperson@192.webp"
-        alt="Avatar three"
+        image-src="..."
+        image-alt="Avatar three"
         class="size-12"
     />
 </x-daisyui::avatar-group>
@@ -89,9 +89,9 @@ Avatars show a thumbnail representation of an individual or business in an inter
 
 <div class="component-preview">
     <x-daisyui::avatar-group class="-space-x-6">
-        <x-daisyui::avatar src="https://img.daisyui.com/images/profile/demo/batperson@192.webp" alt="Avatar one" class="size-12" />
-        <x-daisyui::avatar src="https://img.daisyui.com/images/profile/demo/spiderperson@192.webp" alt="Avatar two" class="size-12" />
-        <x-daisyui::avatar src="https://img.daisyui.com/images/profile/demo/wonderperson@192.webp" alt="Avatar three" class="size-12" />
+        <x-daisyui::avatar image-src="https://img.daisyui.com/images/profile/demo/batperson@192.webp" image-alt="Avatar one" class="size-12" />
+        <x-daisyui::avatar image-src="https://img.daisyui.com/images/profile/demo/spiderperson@192.webp" image-alt="Avatar two" class="size-12" />
+        <x-daisyui::avatar image-src="https://img.daisyui.com/images/profile/demo/wonderperson@192.webp" image-alt="Avatar three" class="size-12" />
     </x-daisyui::avatar-group>
 </div>
 
@@ -100,13 +100,13 @@ Avatars show a thumbnail representation of an individual or business in an inter
 ```html
 <x-daisyui::avatar-group class="-space-x-6">
     <x-daisyui::avatar
-        src="https://img.daisyui.com/images/profile/demo/batperson@192.webp"
-        alt="Avatar one"
+        image-src="..."
+        image-alt="Avatar one"
         class="size-12"
     />
     <x-daisyui::avatar
-        src="https://img.daisyui.com/images/profile/demo/spiderperson@192.webp"
-        alt="Avatar two"
+        image-src="..."
+        image-alt="Avatar two"
         class="size-12"
     />
     <x-daisyui::avatar
@@ -118,8 +118,8 @@ Avatars show a thumbnail representation of an individual or business in an inter
 
 <div class="component-preview">
     <x-daisyui::avatar-group class="-space-x-6">
-        <x-daisyui::avatar src="https://img.daisyui.com/images/profile/demo/batperson@192.webp" alt="Avatar one" class="size-12" />
-        <x-daisyui::avatar src="https://img.daisyui.com/images/profile/demo/spiderperson@192.webp" alt="Avatar two" class="size-12" />
+        <x-daisyui::avatar image-src="https://img.daisyui.com/images/profile/demo/batperson@192.webp" image-alt="Avatar one" class="size-12" />
+        <x-daisyui::avatar image-src="https://img.daisyui.com/images/profile/demo/spiderperson@192.webp" image-alt="Avatar two" class="size-12" />
         <x-daisyui::avatar abbreviation="+99" class="size-12 bg-neutral text-neutral-content" />
     </x-daisyui::avatar-group>
 </div>
@@ -128,15 +128,15 @@ Avatars show a thumbnail representation of an individual or business in an inter
 
 ```html
 <x-daisyui::avatar
-    src="https://img.daisyui.com/images/profile/demo/gordon@192.webp"
-    alt="Online avatar"
+    image-src="..."
+    image-alt="Online avatar"
     presence="online"
     class="size-24"
     rounded
 />
 <x-daisyui::avatar
-    src="https://img.daisyui.com/images/profile/demo/idiotsandwich@192.webp"
-    alt="Offline avatar"
+    image-src="..."
+    image-alt="Offline avatar"
     presence="offline"
     class="size-24"
     rounded
@@ -144,24 +144,24 @@ Avatars show a thumbnail representation of an individual or business in an inter
 ```
 
 <div class="component-preview flex items-center gap-6">
-    <x-daisyui::avatar presence="online" src="https://img.daisyui.com/images/profile/demo/gordon@192.webp" alt="Online avatar" rounded class="size-24" />
-    <x-daisyui::avatar presence="offline" src="https://img.daisyui.com/images/profile/demo/idiotsandwich@192.webp" alt="Offline avatar" rounded class="size-24" />
+    <x-daisyui::avatar presence="online" image-src="https://img.daisyui.com/images/profile/demo/gordon@192.webp" image-alt="Online avatar" rounded class="size-24" />
+    <x-daisyui::avatar presence="offline" image-src="https://img.daisyui.com/images/profile/demo/idiotsandwich@192.webp" image-alt="Offline avatar" rounded class="size-24" />
 </div>
 
 ## Avatar with ring
 
 ```html
 <x-daisyui::avatar
-    src="https://img.daisyui.com/images/profile/demo/gordon@192.webp"
+    image-src="..."
     class="size-24 ring-2 ring-primary ring-offset-2 ring-offset-base-100"
-    alt="Avatar with ring"
+    image-alt="Avatar with ring"
     presence="online"
     rounded
 />
 ```
 
 <div class="component-preview">
-    <x-daisyui::avatar src="https://img.daisyui.com/images/profile/demo/gordon@192.webp" alt="Avatar with ring" rounded presence="online" class="size-24 ring-2 ring-primary ring-offset-2 ring-offset-base-100" />
+    <x-daisyui::avatar image-src="https://img.daisyui.com/images/profile/demo/gordon@192.webp" image-alt="Avatar with ring" rounded presence="online" class="size-24 ring-2 ring-primary ring-offset-2 ring-offset-base-100" />
 </div>
 
 ## Avatar placeholders
