@@ -14,14 +14,13 @@ class Avatar extends Component
         public ?string $src = null,
         public ?string $alt = null,
         public bool    $rounded = false,
-    )
-    {
+    ) {
     }
 
     public function render(): string
     {
         return <<<'blade'
-            <div class="{{ $classes() }}">@if ($abbreviation)<div {{ $attributes->merge(['class' => $rounded ? 'rounded-full' : null]) }}><span>{{ $abbreviation }}</span></div>@else<img {{ $attributes->merge(['src' => $src, 'alt' => $alt, 'class' => $rounded ? 'rounded-full' : null]) }}>@endif</div>
+            <div {{ $attributes->class($classes())->merge() }}>@if ($hasAbbreviation())<div><span>{{ $abbreviation }}</span></div>@else<img src="{{ $src }}" alt="{{ $alt }}">@endif</div>
         blade;
     }
 
@@ -32,17 +31,23 @@ class Avatar extends Component
             array: array_filter([
                 'avatar',
                 $this->presenceClass(),
-                $this->abbreviation ? 'avatar-placeholder' : null,
+                $this->hasAbbreviation() ? 'avatar-placeholder' : null,
+                $this->rounded ? 'rounded-full' : null,
             ])
         );
+    }
+
+    public function hasAbbreviation(): bool
+    {
+        return $this->abbreviation !== null && $this->abbreviation !== '';
     }
 
     private function presenceClass(): ?string
     {
         return match ($this->presence) {
-            'online' => 'avatar-online',
+            'online'  => 'avatar-online',
             'offline' => 'avatar-offline',
-            default => null,
+            default   => null,
         };
     }
 }
