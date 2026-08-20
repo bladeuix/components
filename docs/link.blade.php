@@ -1,9 +1,3 @@
----
-title: Link
-description: Link adds the missing underline style to links.
-group: Components
----
-
 # Link
 
 Link adds the missing underline style to links.
@@ -14,11 +8,10 @@ Link adds the missing underline style to links.
 </x-daisyui::link>
 ```
 
-```html +parse
 <div class="component-preview">
     <x-daisyui::link href="#">Click me</x-daisyui::link>
 </div>
-```
+
 
 ## Link colors
 
@@ -30,10 +23,12 @@ Link adds the missing underline style to links.
 <x-daisyui::link color="info">Info</x-daisyui::link>
 <x-daisyui::link color="success">Success</x-daisyui::link>
 <x-daisyui::link color="warning">Warning</x-daisyui::link>
+```
+
+```html
 <x-daisyui::link color="error">Error</x-daisyui::link>
 ```
 
-```html +parse
 <div class="component-preview">
     <x-daisyui::link color="neutral">Neutral</x-daisyui::link>
     <x-daisyui::link color="primary">Primary</x-daisyui::link>
@@ -44,7 +39,7 @@ Link adds the missing underline style to links.
     <x-daisyui::link color="warning">Warning</x-daisyui::link>
     <x-daisyui::link color="error">Error</x-daisyui::link>
 </div>
-```
+
 
 ## Show underline only on hover
 
@@ -54,11 +49,10 @@ Link adds the missing underline style to links.
 </x-daisyui::link>
 ```
 
-```html +parse
 <div class="component-preview">
     <x-daisyui::link hover>I am a link but I only show underline on hover</x-daisyui::link>
 </div>
-```
+
 
 ## Link in text
 
@@ -80,11 +74,10 @@ Link adds the missing underline style to links.
 </x-daisyui::link>
 ```
 
-```html +parse
 <div class="component-preview">
     <x-daisyui::link class="text-xs md:text-sm lg:text-md xl:text-lg">Responsive Link</x-daisyui::link>
 </div>
-```
+
 
 ## Advance
 
@@ -101,7 +94,6 @@ Link adds the missing underline style to links.
 </x-daisyui::link>
 ```
 
-```html +parse
 <div class="component-preview">
     <x-daisyui::link
         href="https://github.com/bladeuix/daisyui"
@@ -114,4 +106,3 @@ Link adds the missing underline style to links.
         GitHub Repository
     </x-daisyui::link>
 </div>
-```
