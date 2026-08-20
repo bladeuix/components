@@ -45,7 +45,7 @@ Avatars show a thumbnail representation of an individual or business in an inter
 <x-daisyui::avatar
     src="https://img.daisyui.com/images/profile/demo/superperson@192.webp"
     alt="Small avatar"
-    class="w-12"
+    class="size-12"
 />
 ```
 
@@ -59,9 +59,9 @@ Avatars show a thumbnail representation of an individual or business in an inter
 
 <div class="component-preview flex items-center gap-4">
     <x-daisyui::avatar src="https://img.daisyui.com/images/profile/demo/superperson@192.webp" alt="Large avatar" class="size-24 rounded bg-base-300" />
-    <x-daisyui::avatar src="https://img.daisyui.com/images/profile/demo/superperson@192.webp" alt="Medium avatar" class="w-16 rounded bg-base-300" />
-    <x-daisyui::avatar src="https://img.daisyui.com/images/profile/demo/superperson@192.webp" alt="Small avatar" class="w-12 rounded bg-base-300" />
-    <x-daisyui::avatar src="https://img.daisyui.com/images/profile/demo/superperson@192.webp" alt="Extra small avatar" class="w-8 rounded bg-base-300" />
+    <x-daisyui::avatar src="https://img.daisyui.com/images/profile/demo/superperson@192.webp" alt="Medium avatar" class="size-16 rounded bg-base-300" />
+    <x-daisyui::avatar src="https://img.daisyui.com/images/profile/demo/superperson@192.webp" alt="Small avatar" class="size-12 rounded bg-base-300" />
+    <x-daisyui::avatar src="https://img.daisyui.com/images/profile/demo/superperson@192.webp" alt="Extra small avatar" class="size-8 rounded bg-base-300" />
 </div>
 
 
@@ -72,26 +72,26 @@ Avatars show a thumbnail representation of an individual or business in an inter
     <x-daisyui::avatar
         src="https://img.daisyui.com/images/profile/demo/batperson@192.webp"
         alt="Avatar one"
-        class="w-12"
+        class="size-12"
     />
     <x-daisyui::avatar
         src="https://img.daisyui.com/images/profile/demo/spiderperson@192.webp"
         alt="Avatar two"
-        class="w-12"
+        class="size-12"
     />
     <x-daisyui::avatar
         src="https://img.daisyui.com/images/profile/demo/wonderperson@192.webp"
         alt="Avatar three"
-        class="w-12"
+        class="size-12"
     />
 </x-daisyui::avatar-group>
 ```
 
 <div class="component-preview">
     <x-daisyui::avatar-group class="-space-x-6">
-        <x-daisyui::avatar src="https://img.daisyui.com/images/profile/demo/batperson@192.webp" alt="Avatar one" class="w-12 bg-base-300" />
-        <x-daisyui::avatar src="https://img.daisyui.com/images/profile/demo/spiderperson@192.webp" alt="Avatar two" class="w-12 bg-base-300" />
-        <x-daisyui::avatar src="https://img.daisyui.com/images/profile/demo/wonderperson@192.webp" alt="Avatar three" class="w-12 bg-base-300" />
+        <x-daisyui::avatar src="https://img.daisyui.com/images/profile/demo/batperson@192.webp" alt="Avatar one" class="size-12 bg-base-300" />
+        <x-daisyui::avatar src="https://img.daisyui.com/images/profile/demo/spiderperson@192.webp" alt="Avatar two" class="size-12 bg-base-300" />
+        <x-daisyui::avatar src="https://img.daisyui.com/images/profile/demo/wonderperson@192.webp" alt="Avatar three" class="size-12 bg-base-300" />
     </x-daisyui::avatar-group>
 </div>
 
@@ -102,15 +102,15 @@ Avatars show a thumbnail representation of an individual or business in an inter
     <x-daisyui::avatar
         src="https://img.daisyui.com/images/profile/demo/batperson@192.webp"
         alt="Avatar one"
-        class="w-12"
+        class="size-12"
     />
     <x-daisyui::avatar
         src="https://img.daisyui.com/images/profile/demo/spiderperson@192.webp"
         alt="Avatar two"
-        class="w-12"
+        class="size-12"
     />
     <x-daisyui::avatar
-        class="w-12 bg-neutral text-neutral-content"
+        class="size-12 bg-neutral text-neutral-content"
         abbreviation="+99"
     />
 </x-daisyui::avatar-group>
@@ -118,9 +118,9 @@ Avatars show a thumbnail representation of an individual or business in an inter
 
 <div class="component-preview">
     <x-daisyui::avatar-group class="-space-x-6">
-        <x-daisyui::avatar src="https://img.daisyui.com/images/profile/demo/batperson@192.webp" alt="Avatar one" class="w-12 bg-base-300" />
-        <x-daisyui::avatar src="https://img.daisyui.com/images/profile/demo/spiderperson@192.webp" alt="Avatar two" class="w-12 bg-base-300" />
-        <x-daisyui::avatar abbreviation="+99" class="w-12 bg-neutral text-neutral-content" />
+        <x-daisyui::avatar src="https://img.daisyui.com/images/profile/demo/batperson@192.webp" alt="Avatar one" class="size-12 bg-base-300" />
+        <x-daisyui::avatar src="https://img.daisyui.com/images/profile/demo/spiderperson@192.webp" alt="Avatar two" class="size-12 bg-base-300" />
+        <x-daisyui::avatar abbreviation="+99" class="size-12 bg-neutral text-neutral-content" />
     </x-daisyui::avatar-group>
 </div>
 
@@ -173,29 +173,29 @@ Avatars show a thumbnail representation of an individual or business in an inter
     rounded
 />
 <x-daisyui::avatar
-    class="w-16 bg-neutral text-neutral-content text-xl"
-    presence="online"
+    class="size-16 bg-neutral text-neutral-content text-xl"
     abbreviation="AI"
+    presence="online"
     rounded
 />
 <x-daisyui::avatar
+    class="size-12 bg-neutral text-neutral-content"
     abbreviation="SY"
-    class="w-12 bg-neutral text-neutral-content"
     rounded
 />
 ```
 
 ```html
 <x-daisyui::avatar
+    class="size-8 bg-neutral text-neutral-content text-xs"
     abbreviation="UI"
     rounded
-    class="w-8 bg-neutral text-neutral-content text-xs"
 />
 ```
 
 <div class="component-preview flex items-center gap-6">
     <x-daisyui::avatar abbreviation="D" rounded class="size-24 bg-neutral text-neutral-content text-3xl" />
-    <x-daisyui::avatar presence="online" abbreviation="AI" rounded class="w-16 bg-neutral text-neutral-content text-xl" />
-    <x-daisyui::avatar abbreviation="SY" rounded class="w-12 bg-neutral text-neutral-content" />
-    <x-daisyui::avatar abbreviation="UI" rounded class="w-8 bg-neutral text-neutral-content text-xs" />
+    <x-daisyui::avatar presence="online" abbreviation="AI" rounded class="size-16 bg-neutral text-neutral-content text-xl" />
+    <x-daisyui::avatar abbreviation="SY" rounded class="size-12 bg-neutral text-neutral-content" />
+    <x-daisyui::avatar abbreviation="UI" rounded class="size-8 bg-neutral text-neutral-content text-xs" />
 </div>

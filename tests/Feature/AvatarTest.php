@@ -13,7 +13,7 @@ it(description: 'can render an avatar image', closure: function () {
 it(description: 'can render a rounded avatar', closure: function () {
     $view = $this->blade(template: '<x-daisyui::avatar rounded src="https://example.com/avatar.webp" alt="Jane Doe" />');
 
-    $view->assertSee(value: '<div class="avatar rounded-full"><img src="https://example.com/avatar.webp" alt="Jane Doe"></div>', escape: false);
+    $view->assertSee(value: '<div class="avatar rounded-full"><img src="https://example.com/avatar.webp" alt="Jane Doe" class="rounded-full overflow-hidden"></div>', escape: false);
 });
 
 it(description: 'can render online and offline avatar statuses', closure: function (string $status) {
@@ -22,10 +22,17 @@ it(description: 'can render online and offline avatar statuses', closure: functi
     $view->assertSee(value: sprintf('class="avatar avatar-%s"', $status), escape: false);
 })->with(['online', 'offline']);
 
-it(description: 'can render an avatar abbreviation placeholder', closure: function () {
-    $view = $this->blade(template: '<x-daisyui::avatar abbreviation="AI" class="w-16 rounded-full bg-neutral" />');
+it(description: 'does not clip presence indicators on rounded avatars', closure: function () {
+    $view = $this->blade(template: '<x-daisyui::avatar rounded presence="online" src="https://example.com/avatar.webp" alt="Avatar" />');
 
-    $view->assertSee(value: '<div class="avatar avatar-placeholder w-16 rounded-full bg-neutral"><div><span>AI</span></div></div>', escape: false);
+    $view->assertSee(value: '<div class="avatar avatar-online rounded-full">', escape: false)
+        ->assertDontSee(value: '<div class="avatar avatar-online rounded-full overflow-hidden">', escape: false);
+});
+
+it(description: 'can render an avatar abbreviation placeholder', closure: function () {
+    $view = $this->blade(template: '<x-daisyui::avatar abbreviation="AI" rounded class="w-16 bg-neutral" />');
+
+    $view->assertSee(value: '<div class="avatar avatar-placeholder rounded-full w-16 bg-neutral"><div class="rounded-full overflow-hidden"><span>AI</span></div></div>', escape: false);
 });
 
 it(description: 'uses an abbreviation instead of an image', closure: function () {
