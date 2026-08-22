@@ -19,9 +19,9 @@ class Checkbox extends Component
     {
         return <<<'blade'
             @if ($label !== null)
-                <label class="label"><input {{ $attributes->class($classes())->merge(['type' => 'checkbox']) }}> {{ $label }}</label>
+                <label class="label"><input {{ $attributes->except('type')->class($classes())->merge(['type' => 'checkbox']) }}> {{ $label }}</label>
             @else
-                <input {{ $attributes->class($classes())->merge(['type' => 'checkbox']) }}>
+                <input {{ $attributes->except('type')->class($classes())->merge(['type' => 'checkbox']) }}>
             @endif
         blade;
     }
