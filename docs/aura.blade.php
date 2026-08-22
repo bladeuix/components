@@ -3,111 +3,111 @@
 Aura is a border light effect that can wrap around any component. It is useful for highlighting an important button, card, or other element.
 
 ```html
-<x-daisyui::aura>
-    <x-daisyui::button>Button with aura</x-daisyui::button>
-</x-daisyui::aura>
+<x-aura>
+    <x-button>Button with aura</x-button>
+</x-aura>
 ```
 
 <div class="component-preview">
-    <x-daisyui::aura>
-        <x-daisyui::button>Button with aura</x-daisyui::button>
-    </x-daisyui::aura>
+    <x-aura>
+        <x-button>Button with aura</x-button>
+    </x-aura>
 </div>
 
 ## Aura around a card
 
 ```html
-<x-daisyui::aura>
+<x-aura>
     <div class="card bg-base-100">
         <div class="card-body">
             <p>This card has aura</p>
         </div>
     </div>
-</x-daisyui::aura>
+</x-aura>
 ```
 
 <div class="component-preview">
-    <x-daisyui::aura>
+    <x-aura>
         <div class="card bg-base-100">
             <div class="card-body">
                 <p>This card has aura</p>
             </div>
         </div>
-    </x-daisyui::aura>
+    </x-aura>
 </div>
 
 ## Aura styles
 
 ```html
-<x-daisyui::aura style="dual">
-    <x-daisyui::button>Dual</x-daisyui::button>
-</x-daisyui::aura>
-<x-daisyui::aura style="rainbow">
-    <x-daisyui::button>Rainbow</x-daisyui::button>
-</x-daisyui::aura>
-<x-daisyui::aura style="holo">
-    <x-daisyui::button>Holo</x-daisyui::button>
-</x-daisyui::aura>
-<x-daisyui::aura style="glow">
-    <x-daisyui::button>Glow</x-daisyui::button>
-</x-daisyui::aura>
-<x-daisyui::aura style="gold">
-    <x-daisyui::button>Gold</x-daisyui::button>
-</x-daisyui::aura>
+<x-aura style="dual">
+    <x-button>Dual</x-button>
+</x-aura>
+<x-aura style="rainbow">
+    <x-button>Rainbow</x-button>
+</x-aura>
+<x-aura style="holo">
+    <x-button>Holo</x-button>
+</x-aura>
+<x-aura style="glow">
+    <x-button>Glow</x-button>
+</x-aura>
+<x-aura style="gold">
+    <x-button>Gold</x-button>
+</x-aura>
 ```
 
 ```html
-<x-daisyui::aura style="silver">
-    <x-daisyui::button>Silver</x-daisyui::button>
-</x-daisyui::aura>
+<x-aura style="silver">
+    <x-button>Silver</x-button>
+</x-aura>
 ```
 
 <div class="component-preview flex flex-wrap items-center gap-6">
-    <x-daisyui::aura style="dual">
-        <x-daisyui::button>Dual</x-daisyui::button>
-    </x-daisyui::aura>
-    <x-daisyui::aura style="rainbow">
-        <x-daisyui::button>Rainbow</x-daisyui::button>
-    </x-daisyui::aura>
-    <x-daisyui::aura style="holo">
-        <x-daisyui::button>Holo</x-daisyui::button>
-    </x-daisyui::aura>
-    <x-daisyui::aura style="glow">
-        <x-daisyui::button>Glow</x-daisyui::button>
-    </x-daisyui::aura>
-    <x-daisyui::aura style="gold">
-        <x-daisyui::button>Gold</x-daisyui::button>
-    </x-daisyui::aura>
-    <x-daisyui::aura style="silver">
-        <x-daisyui::button>Silver</x-daisyui::button>
-    </x-daisyui::aura>
+    <x-aura style="dual">
+        <x-button>Dual</x-button>
+    </x-aura>
+    <x-aura style="rainbow">
+        <x-button>Rainbow</x-button>
+    </x-aura>
+    <x-aura style="holo">
+        <x-button>Holo</x-button>
+    </x-aura>
+    <x-aura style="glow">
+        <x-button>Glow</x-button>
+    </x-aura>
+    <x-aura style="gold">
+        <x-button>Gold</x-button>
+    </x-aura>
+    <x-aura style="silver">
+        <x-button>Silver</x-button>
+    </x-aura>
 </div>
 
 ## Custom colors
 
 ```html
-<x-daisyui::aura class="text-orange-600">
-    <x-daisyui::button>Custom color</x-daisyui::button>
-</x-daisyui::aura>
+<x-aura class="text-orange-600">
+    <x-button>Custom color</x-button>
+</x-aura>
 
-<x-daisyui::aura class="bg-yellow-200 text-orange-600">
-    <x-daisyui::button>Custom color and background</x-daisyui::button>
-</x-daisyui::aura>
+<x-aura class="bg-yellow-200 text-orange-600">
+    <x-button>Custom color and background</x-button>
+</x-aura>
 ```
 
 <div class="component-preview flex flex-wrap items-center gap-6">
-    <x-daisyui::aura class="text-orange-600">
-        <x-daisyui::button>Custom color</x-daisyui::button>
-    </x-daisyui::aura>
-    <x-daisyui::aura class="bg-yellow-200 text-orange-600">
-        <x-daisyui::button>Custom background</x-daisyui::button>
-    </x-daisyui::aura>
+    <x-aura class="text-orange-600">
+        <x-button>Custom color</x-button>
+    </x-aura>
+    <x-aura class="bg-yellow-200 text-orange-600">
+        <x-button>Custom background</x-button>
+    </x-aura>
 </div>
 
 ## Aura around a pricing card
 
 ```html
-<x-daisyui::aura style="rainbow">
+<x-aura style="rainbow">
     <div class="card w-96 bg-base-100 shadow-sm">
         <div class="card-body">
             <span class="badge badge-xs badge-warning">Most Popular</span>
@@ -121,14 +121,14 @@ Aura is a border light effect that can wrap around any component. It is useful f
                 <li>Batch processing capabilities</li>
                 <li class="opacity-50 line-through">Real-time collaboration tools</li>
             </ul>
-            <x-daisyui::button color="primary" class="mt-6 w-full">Subscribe</x-daisyui::button>
+            <x-button color="primary" class="mt-6 w-full">Subscribe</x-button>
         </div>
     </div>
-</x-daisyui::aura>
+</x-aura>
 ```
 
 <div class="component-preview">
-    <x-daisyui::aura style="rainbow">
+    <x-aura style="rainbow">
         <div class="card w-96 bg-base-100 shadow-sm">
             <div class="card-body">
                 <span class="badge badge-xs badge-warning">Most Popular</span>
@@ -142,63 +142,63 @@ Aura is a border light effect that can wrap around any component. It is useful f
                     <li>Batch processing capabilities</li>
                     <li class="opacity-50 line-through">Real-time collaboration tools</li>
                 </ul>
-                <x-daisyui::button color="primary" class="mt-6 w-full">Subscribe</x-daisyui::button>
+                <x-button color="primary" class="mt-6 w-full">Subscribe</x-button>
             </div>
         </div>
-    </x-daisyui::aura>
+    </x-aura>
 </div>
 
 ## Aura sizes
 
 ```html
-<x-daisyui::aura size="xs">
-    <x-daisyui::button>XS</x-daisyui::button>
-</x-daisyui::aura>
-<x-daisyui::aura size="sm">
-    <x-daisyui::button>SM</x-daisyui::button>
-</x-daisyui::aura>
-<x-daisyui::aura size="md">
-    <x-daisyui::button>MD</x-daisyui::button>
-</x-daisyui::aura>
-<x-daisyui::aura size="lg">
-    <x-daisyui::button>LG</x-daisyui::button>
-</x-daisyui::aura>
+<x-aura size="xs">
+    <x-button>XS</x-button>
+</x-aura>
+<x-aura size="sm">
+    <x-button>SM</x-button>
+</x-aura>
+<x-aura size="md">
+    <x-button>MD</x-button>
+</x-aura>
+<x-aura size="lg">
+    <x-button>LG</x-button>
+</x-aura>
 ```
 
 ```html
-<x-daisyui::aura size="xl">
-    <x-daisyui::button>XL</x-daisyui::button>
-</x-daisyui::aura>
+<x-aura size="xl">
+    <x-button>XL</x-button>
+</x-aura>
 ```
 
 <div class="component-preview flex flex-wrap items-center gap-6">
-    <x-daisyui::aura size="xs">
-        <x-daisyui::button>XS</x-daisyui::button>
-    </x-daisyui::aura>
-    <x-daisyui::aura size="sm">
-        <x-daisyui::button>SM</x-daisyui::button>
-    </x-daisyui::aura>
-    <x-daisyui::aura size="md">
-        <x-daisyui::button>MD</x-daisyui::button>
-    </x-daisyui::aura>
-    <x-daisyui::aura size="lg">
-        <x-daisyui::button>LG</x-daisyui::button>
-    </x-daisyui::aura>
-    <x-daisyui::aura size="xl">
-        <x-daisyui::button>XL</x-daisyui::button>
-    </x-daisyui::aura>
+    <x-aura size="xs">
+        <x-button>XS</x-button>
+    </x-aura>
+    <x-aura size="sm">
+        <x-button>SM</x-button>
+    </x-aura>
+    <x-aura size="md">
+        <x-button>MD</x-button>
+    </x-aura>
+    <x-aura size="lg">
+        <x-button>LG</x-button>
+    </x-aura>
+    <x-aura size="xl">
+        <x-button>XL</x-button>
+    </x-aura>
 </div>
 
 ## Custom animation duration
 
 ```html
-<x-daisyui::aura style="rainbow" class="duration-2000">
-    <x-daisyui::button>2000ms duration aura</x-daisyui::button>
-</x-daisyui::aura>
+<x-aura style="rainbow" class="duration-2000">
+    <x-button>2000ms duration aura</x-button>
+</x-aura>
 ```
 
 <div class="component-preview">
-    <x-daisyui::aura style="rainbow" class="duration-2000">
-        <x-daisyui::button>2000ms duration aura</x-daisyui::button>
-    </x-daisyui::aura>
+    <x-aura style="rainbow" class="duration-2000">
+        <x-button>2000ms duration aura</x-button>
+    </x-aura>
 </div>

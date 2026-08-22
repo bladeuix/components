@@ -3,54 +3,54 @@
 Link adds the missing underline style to links.
 
 ```html
-<x-daisyui::link href="#">
+<x-link href="#">
     Click me
-</x-daisyui::link>
+</x-link>
 ```
 
 <div class="component-preview">
-    <x-daisyui::link href="#">Click me</x-daisyui::link>
+    <x-link href="#">Click me</x-link>
 </div>
 
 
 ## Link colors
 
 ```html
-<x-daisyui::link color="neutral">Neutral</x-daisyui::link>
-<x-daisyui::link color="primary">Primary</x-daisyui::link>
-<x-daisyui::link color="secondary">Secondary</x-daisyui::link>
-<x-daisyui::link color="accent">Accent</x-daisyui::link>
-<x-daisyui::link color="info">Info</x-daisyui::link>
-<x-daisyui::link color="success">Success</x-daisyui::link>
-<x-daisyui::link color="warning">Warning</x-daisyui::link>
+<x-link color="neutral">Neutral</x-link>
+<x-link color="primary">Primary</x-link>
+<x-link color="secondary">Secondary</x-link>
+<x-link color="accent">Accent</x-link>
+<x-link color="info">Info</x-link>
+<x-link color="success">Success</x-link>
+<x-link color="warning">Warning</x-link>
 ```
 
 ```html
-<x-daisyui::link color="error">Error</x-daisyui::link>
+<x-link color="error">Error</x-link>
 ```
 
 <div class="component-preview">
-    <x-daisyui::link color="neutral">Neutral</x-daisyui::link>
-    <x-daisyui::link color="primary">Primary</x-daisyui::link>
-    <x-daisyui::link color="secondary">Secondary</x-daisyui::link>
-    <x-daisyui::link color="accent">Accent</x-daisyui::link>
-    <x-daisyui::link color="info">Info</x-daisyui::link>
-    <x-daisyui::link color="success">Success</x-daisyui::link>
-    <x-daisyui::link color="warning">Warning</x-daisyui::link>
-    <x-daisyui::link color="error">Error</x-daisyui::link>
+    <x-link color="neutral">Neutral</x-link>
+    <x-link color="primary">Primary</x-link>
+    <x-link color="secondary">Secondary</x-link>
+    <x-link color="accent">Accent</x-link>
+    <x-link color="info">Info</x-link>
+    <x-link color="success">Success</x-link>
+    <x-link color="warning">Warning</x-link>
+    <x-link color="error">Error</x-link>
 </div>
 
 
 ## Show underline only on hover
 
 ```html
-<x-daisyui::link hover>
+<x-link hover>
     I am a link but I only show underline on hover
-</x-daisyui::link>
+</x-link>
 ```
 
 <div class="component-preview">
-    <x-daisyui::link hover>I am a link but I only show underline on hover</x-daisyui::link>
+    <x-link hover>I am a link but I only show underline on hover</x-link>
 </div>
 
 
@@ -61,7 +61,7 @@ Link adds the missing underline style to links.
   Tailwind CSS resets the style of links by default.
   <br />
   Add "link" class to make it look like a
-  <x-daisyui::link>normal link</x-daisyui::link>
+  <x-link>normal link</x-link>
   again.
 </p>
 ```
@@ -69,20 +69,20 @@ Link adds the missing underline style to links.
 ## Responsive link
 
 ```html
-<x-daisyui::link class="text-xs md:text-sm lg:text-md xl:text-lg">
+<x-link class="text-xs md:text-sm lg:text-md xl:text-lg">
     Responsive Link
-</x-daisyui::link>
+</x-link>
 ```
 
 <div class="component-preview">
-    <x-daisyui::link class="text-xs md:text-sm lg:text-md xl:text-lg">Responsive Link</x-daisyui::link>
+    <x-link class="text-xs md:text-sm lg:text-md xl:text-lg">Responsive Link</x-link>
 </div>
 
 
 ## Advance
 
 ```html
-<x-daisyui::link
+<x-link
     href="https://github.com/bladeuix/daisyui"
     target="_blank"
     rel="noopener noreferrer"
@@ -91,11 +91,11 @@ Link adds the missing underline style to links.
     onclick="console.log('Link clicked')"
 >
     GitHub Repository
-</x-daisyui::link>
+</x-link>
 ```
 
 <div class="component-preview">
-    <x-daisyui::link
+    <x-link
         href="https://github.com/bladeuix/daisyui"
         target="_blank"
         rel="noopener noreferrer"
@@ -104,5 +104,5 @@ Link adds the missing underline style to links.
         onclick="console.log('Link clicked')"
     >
         GitHub Repository
-    </x-daisyui::link>
+    </x-link>
 </div>

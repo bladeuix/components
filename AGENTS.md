@@ -12,6 +12,7 @@ This document outlines the basic rules for the project.
 
 ### Blade Component Implementation
 
+- Components are registered with the configurable `blade-uix.prefix` value; use `<x-badge>` by default or `<x-{prefix}-badge>` when configured. Set the prefix to blank for unprefixed aliases such as `<x-badge>`.
 - Use a `classes(): array` method in component classes to return an array of filtered class strings.
 - Map attributes to CSS classes using `match` statements in private/protected methods (e.g., `sizeClass()`, `colorClass()`).
 - In Blade views, use `$attributes->class($classes())->merge()` for the main element.

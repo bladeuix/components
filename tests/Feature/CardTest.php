@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace BladeUix\DaisyUi\Tests\Feature;
 
 it(description: 'can render a card body around its content', closure: function () {
-    $view = $this->blade(template: '<x-daisyui::card>Content</x-daisyui::card>');
+    $view = $this->blade(template: '<x-card>Content</x-card>');
 
     $view->assertSee(value: '<div class="card">', escape: false);
     $view->assertSee(value: '<div class="card-body">', escape: false);
@@ -14,10 +14,10 @@ it(description: 'can render a card body around its content', closure: function (
 
 it(description: 'can render card title and image attributes with an actions slot', closure: function () {
     $view = $this->blade(template: <<<'BLADE'
-        <x-daisyui::card title="Card title" image-src="shoe.webp" image-alt="Shoes">
+        <x-card title="Card title" image-src="shoe.webp" image-alt="Shoes">
             Card content
-            <x-slot:actions><x-daisyui::button color="primary">Buy now</x-daisyui::button></x-slot:actions>
-        </x-daisyui::card>
+            <x-slot:actions><x-button color="primary">Buy now</x-button></x-slot:actions>
+        </x-card>
     BLADE);
 
     $view->assertSeeHtmlInOrder([
@@ -30,13 +30,13 @@ it(description: 'can render card title and image attributes with an actions slot
 });
 
 it(description: 'can render card attributes', closure: function () {
-    $view = $this->blade(template: '<x-daisyui::card size="lg" style="border" image-full side>Content</x-daisyui::card>');
+    $view = $this->blade(template: '<x-card size="lg" style="border" image-full side>Content</x-card>');
 
     $view->assertSee(value: 'class="card card-lg card-border image-full card-side"', escape: false);
 });
 
 it(description: 'can render a bottom image after the card body', closure: function () {
-    $view = $this->blade(template: '<x-daisyui::card image-src="shoe.webp" image-alt="Shoes" image-bottom>Content</x-daisyui::card>');
+    $view = $this->blade(template: '<x-card image-src="shoe.webp" image-alt="Shoes" image-bottom>Content</x-card>');
 
     $view->assertSeeHtmlInOrder([
         '<div class="card">',
@@ -47,13 +47,13 @@ it(description: 'can render a bottom image after the card body', closure: functi
 });
 
 it(description: 'can render a dashed card', closure: function () {
-    $view = $this->blade(template: '<x-daisyui::card style="dash">Content</x-daisyui::card>');
+    $view = $this->blade(template: '<x-card style="dash">Content</x-card>');
 
     $view->assertSee(value: 'class="card card-dash"', escape: false);
 });
 
 it(description: 'can merge card attributes', closure: function () {
-    $view = $this->blade(template: '<x-daisyui::card class="shadow-xl" id="product">Content</x-daisyui::card>');
+    $view = $this->blade(template: '<x-card class="shadow-xl" id="product">Content</x-card>');
 
     $view->assertSee(value: '<div class="card shadow-xl" id="product">', escape: false);
 });
