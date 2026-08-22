@@ -3,7 +3,7 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/bladeuix/components.svg?style=flat-square)](https://packagist.org/packages/bladeuix/components)
 [![Total Downloads](https://img.shields.io/packagist/dt/bladeuix/components.svg?style=flat-square)](https://packagist.org/packages/bladeuix/components)
 
-**BladeUIX DaisyUI** is a Laravel package for adding [daisyUI](https://daisyui.com/) components to your Blade templates.
+**BladeUIX** is a Laravel package for adding [daisyUI](https://daisyui.com/) components to your Blade templates.
 
 ## Requirements
 
@@ -23,7 +23,7 @@ npm i -D daisyui@latest
 
 ### Package Installation
 
-Install the BladeUIX DaisyUI package via Composer:
+Install the BladeUIX compoents package via Composer:
 
 ```bash
 composer require bladeuix/components
@@ -57,7 +57,7 @@ Once everything is installed and configured, you can use the components in your 
 
 ## Documentation
 
-Full documentation is available at [bladeuix.njoguamos.me.ke/daisyui](https://daisyui.bladeuix.com?source=GitHubRepo).
+Full documentation is available at [bladeuix.njoguamos.me.ke/daisyui](https://bladeuix.njoguamos.me.ke?source=GitHubRepo).
 
 
 ## Testing

@@ -22,7 +22,7 @@ class BladeUixServiceProvider extends ServiceProvider
     {
         $this->publishes(paths: [
             __DIR__.'/../../config/blade-uix.php' => config_path(path: 'blade-uix.php'),
-        ], groups: 'daisyui-config');
+        ], groups: 'blade-uix-config');
 
         $prefix = config(key: 'blade-uix.prefix');
 

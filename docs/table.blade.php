@@ -27,7 +27,7 @@ Table can be used to show a list of data in a table format.
 </x-table>
 ```
 
-<div class="overflow-x-auto">
+<div class="component-preview overflow-x-auto">
     <x-table>
         <x-slot:thead>
             <x-table-head-cell />
@@ -82,7 +82,7 @@ Table can be used to show a list of data in a table format.
 </div>
 ```
 
-<div class="overflow-x-auto rounded-box border border-base-content/5 bg-base-100">
+<div class="component-preview overflow-x-auto rounded-box border border-base-content/5 bg-base-100">
     <x-table>
         <x-slot:thead>
             <x-table-head-cell />
@@ -141,7 +141,7 @@ Use `value` for plain text cells and the default slot when the cell needs richer
 </x-table>
 ```
 
-<div class="overflow-x-auto">
+<div class="component-preview overflow-x-auto">
     <x-table>
         <x-slot:thead>
             <x-table-head-cell value="Name" />
@@ -198,7 +198,7 @@ Use `value` for plain text cells and the default slot when the cell needs richer
 </x-table>
 ```
 
-<div class="overflow-x-auto">
+<div class="component-preview overflow-x-auto">
     <x-table>
         <x-slot:thead>
             <x-table-head-cell />
@@ -251,7 +251,7 @@ Use `value` for plain text cells and the default slot when the cell needs richer
 </x-table>
 ```
 
-<div class="overflow-x-auto">
+<div class="component-preview overflow-x-auto">
     <x-table>
         <x-slot:thead>
             <x-table-head-cell />
@@ -304,7 +304,7 @@ Use `value` for plain text cells and the default slot when the cell needs richer
 </x-table>
 ```
 
-<div class="overflow-x-auto">
+<div class="component-preview overflow-x-auto">
     <x-table zebra>
         <x-slot:thead>
             <x-table-head-cell />
@@ -366,7 +366,7 @@ Use `value` for plain text cells and the default slot when the cell needs richer
 </x-table>
 ```
 
-<div class="overflow-x-auto">
+<div class="component-preview overflow-x-auto">
     <x-table>
         <x-slot:thead>
             <x-table-head-cell>
@@ -426,7 +426,7 @@ Use `value` for plain text cells and the default slot when the cell needs richer
 </div>
 ```
 
-<div class="overflow-x-auto">
+<div class="component-preview overflow-x-auto">
     <x-table size="xs">
         <x-slot:thead>
             <x-table-head-cell value="Name" />
@@ -505,7 +505,7 @@ Use `value` for plain text cells and the default slot when the cell needs richer
 </div>
 ```
 
-<div class="overflow-x-auto h-96 w-96">
+<div class="component-preview overflow-x-auto h-96 w-96">
     <x-table size="xs" pin-rows pin-cols>
         <x-slot:thead>
             <x-table-head-cell />
