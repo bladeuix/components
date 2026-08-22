@@ -64,7 +64,7 @@ By default, DaisyUI components are registered without a prefix, so you can use s
 You may publish the configuration if you prefer to set the value in `config/blade-uix.php`:
 
 ```bash
-php artisan vendor:publish --tag=daisyui-config
+php artisan vendor:publish --tag=blade-uix-config
 ```
 
 > Set `BLADEUIX_COMPONENTS_PREFIX=ui-` in your application `.env` file to use a prefix that matches your application. Your components will then use tags such as `<x-ui-button>` and `<x-ui-badge>`.
