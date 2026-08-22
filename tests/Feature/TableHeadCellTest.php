@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BladeUix\DaisyUi\Tests\Feature;
+namespace BladeUix\Tests\Feature;
 
 it(description: 'can render table head cell with custom classes and attributes', closure: function () {
     $view = $this->blade(template: '<x-table-head-cell scope="col" class="text-primary">Name</x-table-head-cell>');

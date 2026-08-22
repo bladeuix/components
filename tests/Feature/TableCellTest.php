@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BladeUix\DaisyUi\Tests\Feature;
+namespace BladeUix\Tests\Feature;
 
 it(description: 'can render table cell with custom classes and attributes', closure: function () {
     $view = $this->blade(template: '<x-table-cell data-label="name" class="font-bold">Cy Ganderton</x-table-cell>');

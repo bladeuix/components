@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BladeUix\DaisyUi\Tests\Feature;
+namespace BladeUix\Tests\Feature;
 
 it(description: 'can render a card body around its content', closure: function () {
     $view = $this->blade(template: '<x-card>Content</x-card>');

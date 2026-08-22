@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BladeUix\DaisyUi\Tests\Feature;
+namespace BladeUix\Tests\Feature;
 
 it(description: 'can render an avatar image', closure: function () {
     $view = $this->blade(template: '<x-avatar image-src="https://example.com/avatar.webp" image-alt="Jane Doe" />');

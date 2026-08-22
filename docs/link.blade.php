@@ -83,7 +83,7 @@ Link adds the missing underline style to links.
 
 ```html
 <x-link
-    href="https://github.com/bladeuix/daisyui"
+    href="https://github.com/bladeuix/components"
     target="_blank"
     rel="noopener noreferrer"
     title="Visit DaisyUI on GitHub"
@@ -96,7 +96,7 @@ Link adds the missing underline style to links.
 
 <div class="component-preview">
     <x-link
-        href="https://github.com/bladeuix/daisyui"
+        href="https://github.com/bladeuix/components"
         target="_blank"
         rel="noopener noreferrer"
         title="Visit DaisyUI on GitHub"

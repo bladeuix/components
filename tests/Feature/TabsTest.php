@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BladeUix\DaisyUi\Tests\Feature;
+namespace BladeUix\Tests\Feature;
 
 it(description: 'can render tabs with style, placement, and size classes', closure: function () {
     $view = $this->blade(template: '<x-tabs style="lift" placement="bottom" size="lg">Tabs</x-tabs>');

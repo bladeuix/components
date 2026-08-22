@@ -1,12 +1,12 @@
 # Changelog
 
-High-level changes for each BladeUIX DaisyUI release. For complete details, see the [GitHub releases](https://github.com/bladeuix/daisyui/releases).
+High-level changes for each BladeUIX DaisyUI release. For complete details, see the [GitHub releases](https://github.com/bladeuix/components/releases).
 
 ## v2.0.0 - 2026-08-20
 
 - Added Card, Carousel, CarouselItem, and AvatarGroup components.
 - Updated Avatar with its input-based API, including presence, abbreviation, image, and rounded attributes.
-- Introduced breaking Avatar API changes; review the [v2.0.0 release notes](https://github.com/bladeuix/daisyui/releases/tag/v2.0.0) before upgrading from v1.2.0.
+- Introduced breaking Avatar API changes; review the [v2.0.0 release notes](https://github.com/bladeuix/components/releases/tag/v2.0.0) before upgrading from v1.2.0.
 
 ## v1.2.0 - 2026-08-20
 

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BladeUix\DaisyUi\Tests\Feature;
+namespace BladeUix\Tests\Feature;
 
 it(description: 'uses the required name as the radio ID', closure: function () {
     $view = $this->blade(template: '<x-radio name="plan" id="other" />');

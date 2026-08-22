@@ -1,6 +1,6 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "bladeuix/daisyui",
+    "name": "bladeuix/components",
     "description": "A Laravel blade component library based on daisyUI.",
     "keywords": [
         "laravel",
@@ -19,8 +19,8 @@
     },
     "autoload": {
         "psr-4": {
-            "BladeUix\\DaisyUi\\": "src/",
-            "BladeUix\\DaisyUi\\Tests\\": "tests/"
+            "BladeUix\\": "src/",
+            "BladeUix\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -30,7 +30,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "BladeUix\\DaisyUi\\Providers\\BladeUixServiceProvider"
+                "BladeUix\\Providers\\BladeUixServiceProvider"
             ]
         }
     },

@@ -14,7 +14,7 @@ declare(strict_types=1);
 |
 */
 
-use BladeUix\DaisyUi\Tests\TestCase;
+use BladeUix\Tests\TestCase;
 
 pest()->extend(TestCase::class)->in('Feature');
 

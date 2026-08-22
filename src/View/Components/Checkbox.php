@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BladeUix\DaisyUi\View\Components;
+namespace BladeUix\View\Components;
 
 use Illuminate\View\Component;
 

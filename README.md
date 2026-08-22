@@ -1,7 +1,7 @@
 # BladeUIX DaisyUI
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/bladeuix/daisyui.svg?style=flat-square)](https://packagist.org/packages/bladeuix/daisyui)
-[![Total Downloads](https://img.shields.io/packagist/dt/bladeuix/daisyui.svg?style=flat-square)](https://packagist.org/packages/bladeuix/daisyui)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/bladeuix/components.svg?style=flat-square)](https://packagist.org/packages/bladeuix/components)
+[![Total Downloads](https://img.shields.io/packagist/dt/bladeuix/components.svg?style=flat-square)](https://packagist.org/packages/bladeuix/components)
 
 **BladeUIX DaisyUI** is a Laravel package for adding [daisyUI](https://daisyui.com/) components to your Blade templates.
 
@@ -26,20 +26,20 @@ npm i -D daisyui@latest
 Install the BladeUIX DaisyUI package via Composer:
 
 ```bash
-composer require bladeuix/daisyui
+composer require bladeuix/components
 ```
 
 ### Configure Tailwind CSS
 
 - Ensure that `daisyui` tailwindcss plugin in installed.
-- `../../vendor/bladeuix/daisyui/src/View/Components/*.php` is included in tailwindcss scan files.
+- `../../vendor/bladeuix/components/src/View/Components/*.php` is included in tailwindcss scan files.
 
 ```css
 @import "tailwindcss";
 
 /*Your other @source...*/
 
-@source "../../vendor/bladeuix/daisyui/src/View/Components/*.php";
+@source "../../vendor/bladeuix/components/src/View/Components/*.php";
 @plugin "daisyui";
 
 /*Your other css utilities...*/
@@ -68,7 +68,7 @@ composer test
 
 ## Changelog
 
-Please see [GitHub Releases](https://github.com/bladeuix/daisyui/releases) for more information on what has changed recently.
+Please see [GitHub Releases](https://github.com/bladeuix/components/releases) for more information on what has changed recently.
 
 ## Contributing
 
