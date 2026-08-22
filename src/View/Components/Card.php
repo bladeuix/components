@@ -67,7 +67,7 @@ class Card extends Component
     {
         return match ($style) {
             'border', 'card-border' => 'card-border',
-            'dash', 'card-dash' => 'card-dash',
+            'dash', 'card-dash'     => 'card-dash',
             default => null,
         };
     }
