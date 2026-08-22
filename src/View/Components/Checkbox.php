@@ -11,18 +11,13 @@ class Checkbox extends Component
     public function __construct(
         public ?string $size = null,
         public ?string $color = null,
-        public ?string $label = null,
     ) {
     }
 
     public function render(): string
     {
         return <<<'blade'
-            @if ($label !== null)
-                <label class="label"><input {{ $attributes->except('type')->class($classes())->merge(['type' => 'checkbox']) }}> {{ $label }}</label>
-            @else
-                <input {{ $attributes->except('type')->class($classes())->merge(['type' => 'checkbox']) }}>
-            @endif
+            <input {{ $attributes->except('type')->class($classes())->merge(['type' => 'checkbox']) }}>
         blade;
     }
 

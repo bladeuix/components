@@ -10,16 +10,6 @@ Checkboxes are used to select or deselect a value.
     <x-daisyui::checkbox checked />
 </div>
 
-## With label
-
-```html
-<x-daisyui::checkbox label="Remember me" checked />
-```
-
-<div class="component-preview">
-    <x-daisyui::checkbox label="Remember me" checked />
-</div>
-
 ## Sizes
 
 ```html
@@ -72,6 +62,9 @@ Checkboxes are used to select or deselect a value.
 
 ```html
 <x-daisyui::checkbox disabled />
+```
+
+```html
 <x-daisyui::checkbox checked disabled />
 ```
 
@@ -82,9 +75,39 @@ Checkboxes are used to select or deselect a value.
 
 ## Indeterminate
 
+<div class="component-preview code-example">
+    <x-daisyui::tabs style="box" class="w-full">
+        <x-daisyui::tab name="indeterminate-tabs" label="Vanilla" active class="bg-base-100 border-base-300">
 ```html
-<x-daisyui::checkbox x-ref="checkbox" x-init="$el.indeterminate = true" />
+<x-daisyui::checkbox id="indeterminate-checkbox" />
+
+<script>
+    document.getElementById("indeterminate-checkbox").indeterminate = true
+</script>
 ```
+        </x-daisyui::tab>
+
+        <x-daisyui::tab name="indeterminate-tabs" label="Alpine.js" class="bg-base-100 border-base-300">
+```html
+<div x-data x-init="$refs.checkbox.indeterminate = true">
+    <x-daisyui::checkbox x-ref="checkbox" />
+</div>
+```
+        </x-daisyui::tab>
+
+        <x-daisyui::tab name="indeterminate-tabs" label="Livewire" class="bg-base-100 border-base-300">
+```html
+<div
+    x-data="{ indeterminate: @entangle('indeterminate') }"
+    x-init="$refs.checkbox.indeterminate = indeterminate"
+    x-effect="$refs.checkbox.indeterminate = indeterminate"
+>
+    <x-daisyui::checkbox wire:model="selected" x-ref="checkbox" />
+</div>
+```
+        </x-daisyui::tab>
+    </x-daisyui::tabs>
+</div>
 
 <div class="component-preview" x-data x-init="$refs.checkbox.indeterminate = true">
     <x-daisyui::checkbox x-ref="checkbox" />
