@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BladeUix\DaisyUi\Tests;
+namespace BladeUix\Tests;
 
 use Orchestra\Testbench\TestCase as Orchestra;
 use BladeUix\DaisyUi\Providers\BladeUixServiceProvider;

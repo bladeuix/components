@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BladeUix\DaisyUi\Tests\Feature;
+namespace BladeUix\Tests\Feature;
 
 use BladeUix\DaisyUi\Providers\BladeUixServiceProvider;
 

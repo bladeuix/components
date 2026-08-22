@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BladeUix\DaisyUi\Tests\Feature;
+namespace BladeUix\Tests\Feature;
 
 it(description: 'can render carousel items with default direction and modifier', closure: function () {
     $view = $this->blade(template: '<x-carousel><x-carousel-item>One</x-carousel-item></x-carousel>');

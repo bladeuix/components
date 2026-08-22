@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BladeUix\DaisyUi\Tests\Feature;
+namespace BladeUix\Tests\Feature;
 
 it(description: 'can render breadcrumbs with default classes', closure: function () {
     $view = $this->blade(template: '<x-breadcrumbs></x-breadcrumbs>');

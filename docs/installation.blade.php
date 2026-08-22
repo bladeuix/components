@@ -38,20 +38,20 @@ npm i -D daisyui@latest
 Install the BladeUIX DaisyUI package via Composer:
 
 ```bash
-composer require bladeuix/daisyui
+composer require bladeuix/components
 ```
 
 ## Configure Tailwind CSS
 
 - Ensure that `daisyui` tailwindcss plugin in installed.
-- `../../vendor/bladeuix/daisyui/src/View/Components/*.php` is included in tailwindcss scan files.
+- `../../vendor/bladeuix/components/src/View/Components/*.php` is included in tailwindcss scan files.
 
 ```css
 @import "tailwindcss";
 
 /*Your other @source...*/
 
-+ @source "../../vendor/bladeuix/daisyui/src/View/Components/*.php";
++ @source "../../vendor/bladeuix/components/src/View/Components/*.php";
 + @plugin "daisyui";
 
 /*Your other css utilities...*/

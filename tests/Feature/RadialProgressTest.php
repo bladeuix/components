@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BladeUix\DaisyUi\Tests\Feature;
+namespace BladeUix\Tests\Feature;
 
 it(description: 'can render radial progress with default attributes', closure: function () {
     $view = $this->blade(template: '<x-radial-progress>70%</x-radial-progress>');
