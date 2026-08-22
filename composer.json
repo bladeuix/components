@@ -30,7 +30,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "BladeUix\\DaisyUi\\Providers\\DaisyUiServiceProvider"
+                "BladeUix\\DaisyUi\\Providers\\BladeUixServiceProvider"
             ]
         }
     },

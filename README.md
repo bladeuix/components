@@ -50,7 +50,7 @@ composer require bladeuix/daisyui
 Once everything is installed and configured, you can use the components in your Blade templates:
 
 ```html
-<x-daisyui::button color="primary">
+<x-button color="primary">
     Click Me
 </x-daisyui::button>
 ```
