@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace BladeUix\Tests\Feature;
 
-use BladeUix\DaisyUi\Providers\BladeUixServiceProvider;
+use BladeUix\Providers\BladeUixServiceProvider;
 
 it(description: 'can render components without a prefix by default', closure: function () {
     $view = $this->blade(template: '<x-badge>Badge</x-badge>');

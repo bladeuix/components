@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace BladeUix\Tests;
 
 use Orchestra\Testbench\TestCase as Orchestra;
-use BladeUix\DaisyUi\Providers\BladeUixServiceProvider;
+use BladeUix\Providers\BladeUixServiceProvider;
 
 class TestCase extends Orchestra
 {

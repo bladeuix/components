@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace BladeUix\Providers;
 
-use BladeUix\DaisyUi\View\Components;
+use BladeUix\View\Components;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 
