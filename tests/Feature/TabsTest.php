@@ -37,10 +37,20 @@ it(description: 'can render an active disabled radio tab', closure: function () 
 });
 
 it(description: 'can render a link tab with its content', closure: function () {
-    $view = $this->blade(template: '<x-daisyui::tabs><x-daisyui::tab name="settings" href="/settings" label="Settings" active class="border-base-300">Settings content</x-daisyui::tab></x-daisyui::tabs>');
+    $view = $this->blade(
+        template: '<x-daisyui::tabs><x-daisyui::tab name="settings" href="/settings" label="Settings" active :icon="$icon" class="border-base-300">Settings content</x-daisyui::tab></x-daisyui::tabs>',
+        data: ['icon' => new \Illuminate\Support\HtmlString('<svg class="size-4"></svg>')],
+    );
 
-    $view->assertSee(value: '<a href="/settings" role="tab" class="tab tab-active">Settings</a>', escape: false)
+    $view->assertSee(value: '<a href="/settings" role="tab" class="tab tab-active"><svg class="size-4"></svg>Settings</a>', escape: false)
         ->assertSee(value: '<div class="tab-content border-base-300">Settings content</div>', escape: false);
+});
+
+it(description: 'renders a disabled link tab without an href', closure: function () {
+    $view = $this->blade(template: '<x-daisyui::tab name="settings" href="/settings" label="Settings" disabled />');
+
+    $view->assertSee(value: '<a role="tab" aria-disabled="true" class="tab tab-disabled">Settings</a>', escape: false)
+        ->assertDontSee(value: 'href="/settings"', escape: false);
 });
 
 it(description: 'does not allow radio tab attributes to override its fixed attributes', closure: function () {

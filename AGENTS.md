@@ -4,7 +4,7 @@ This document outlines the basic rules for the project.
 
 ### General Guidelines
 
-- All PHP files must start with `declare(strict_types=1);`.
+- All PHP files must start with `declare(strict_types=1);` except *.blade.php.
 - Use [Laravel Pint](https://laravel.com/docs/pint) for code formatting (`composer format`).
 - All code logic and attribute processing must reside in the Blade component class.
 - Blade view files (`.blade.php`) should only contain the presentation layer (minimal HTML).

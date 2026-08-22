@@ -23,7 +23,7 @@ class Tab extends Component
     {
         if ($this->href !== null) {
             return <<<'blade'
-                <a {{ $attributes->except(['class', 'href', 'role'])->class($classes())->merge(['href' => $href, 'role' => 'tab']) }}>{{ $label }}</a>
+                <a {{ $attributes->except(['aria-disabled', 'class', 'href', 'role'])->class($classes())->merge($linkAttributes()) }}>{{ $icon }}{{ $label }}</a>
                 <div {{ $attributes->only('class')->class('tab-content') }}>{{ $slot }}</div>
             blade;
         }
@@ -53,5 +53,12 @@ class Tab extends Component
             'checked'      => $this->active ?: null,
             'disabled'     => $this->disabled ?: null,
         ]);
+    }
+
+    public function linkAttributes(): array
+    {
+        return $this->disabled
+            ? ['role' => 'tab', 'aria-disabled' => 'true']
+            : ['href' => $this->href, 'role' => 'tab'];
     }
 }
