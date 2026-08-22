@@ -20,7 +20,7 @@ composer format
 
 ### General Guidelines
 
-- All PHP files must start with `declare(strict_types=1);`.
+- All PHP files must start with `declare(strict_types=1);` except *.blade.php..
 - All code logic and attribute processing must reside in the Blade component class.
 - Blade view files (`.blade.php`) should only contain the presentation layer (minimal HTML).
 - All HTML/CSS classes must be defined and processed in the Blade component class.
