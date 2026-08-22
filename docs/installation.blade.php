@@ -57,12 +57,42 @@ composer require bladeuix/daisyui
 /*Your other css utilities...*/
 ```
 
+## Configure Component Prefix (Optional)
+
+By default, DaisyUI components are registered without a prefix, so you can use standard Laravel component tags such as `<x-button>`. This is convenient, but component names may collide with components registered by your application or other packages.
+
+You may publish the configuration if you prefer to set the value in `config/blade-uix.php`:
+
+```bash
+php artisan vendor:publish --tag=daisyui-config
+```
+
+> Set `BLADEUIX_COMPONENTS_PREFIX=ui-` in your application `.env` file to use a prefix that matches your application. Your components will then use tags such as `<x-ui-button>` and `<x-ui-badge>`.
+
 ## Basic Usage
 
 Once everything is installed and configured, you can use the components in your Blade templates:
 
 ```html
-<x-daisyui::button color="primary">
-    Click Me
-</x-daisyui::button>
+<x-card title="Deployment" class="w-full max-w-sm bg-base-100 shadow-sm">
+    <x-badge color="success" variant="soft">Ready</x-badge>
+    <p>Production deployment is 75% complete.</p>
+    <x-progress value="75" color="primary" class="w-full" />
+
+    <x-slot:actions>
+        <x-button color="primary">Deploy</x-button>
+    </x-slot:actions>
+</x-card>
 ```
+
+<div class="component-preview">
+    <x-card title="Deployment" class="w-full max-w-sm bg-base-100 shadow-sm">
+        <x-badge color="success" variant="soft">Ready</x-badge>
+        <p>Production deployment is 75% complete.</p>
+        <x-progress value="75" color="primary" class="w-full" />
+
+        <x-slot:actions>
+            <x-button color="primary">Deploy</x-button>
+        </x-slot:actions>
+    </x-card>
+</div>
