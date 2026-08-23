@@ -125,3 +125,14 @@ Checkboxes are used to select or deselect a value.
 <div class="component-preview">
     <x-checkbox checked class="border-indigo-600 bg-indigo-500 checked:border-orange-500 checked:bg-orange-400 checked:text-orange-800" />
 </div>
+
+---
+
+## Reference
+
+### Checkbox Attributes
+
+| Name    | Default | Description                                                                                                |
+|---------|---------|------------------------------------------------------------------------------------------------------------|
+| `size`  | `null`  | The checkbox size: `xs`, `sm`, `md`, `lg`, or `xl`.                                                        |
+| `color` | `null`  | The checkbox color: `primary`, `secondary`, `accent`, `neutral`, `info`, `success`, `warning`, or `error`. |

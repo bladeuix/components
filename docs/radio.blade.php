@@ -102,3 +102,15 @@ Radio buttons allow the user to select one option from a set.
     <x-radio name="radio-custom" checked class="border-red-300 bg-red-100 checked:border-red-600 checked:bg-red-200 checked:text-red-600" />
     <x-radio name="radio-custom" class="border-blue-300 bg-blue-100 checked:border-blue-600 checked:bg-blue-200 checked:text-blue-600" />
 </div>
+
+---
+
+## Reference
+
+### Radio Attributes
+
+| Name    | Default    | Description                                                                                             |
+|---------|------------|---------------------------------------------------------------------------------------------------------|
+| `name`  | *Required* | The radio group name and input `id`.                                                                    |
+| `size`  | `null`     | The radio size: `xs`, `sm`, `md`, `lg`, or `xl`.                                                        |
+| `color` | `null`     | The radio color: `neutral`, `primary`, `secondary`, `accent`, `info`, `success`, `warning`, or `error`. |

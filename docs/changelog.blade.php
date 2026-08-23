@@ -2,6 +2,13 @@
 
 High-level changes for each BladeUIX DaisyUI release. For complete details, see the [GitHub releases](https://github.com/bladeuix/components/releases).
 
+## v3.0.0 - Unreleased
+
+- Added Checkbox, Radio, Tabs, and Tab components.
+- Renamed the Packagist package from `bladeuix/daisyui` to `bladeuix/components`.
+- Introduced breaking changes: component namespace aliases such as `<x-daisyui::button>` have been dropped in favor of standard aliases such as `<x-button>`. Set `BLADEUIX_COMPONENTS_PREFIX=daisyui::` to continue using the previous namespace-style aliases.
+- Removed the Checkbox label API; provide labels with standard HTML instead.
+
 ## v2.0.0 - 2026-08-20
 
 - Added Card, Carousel, CarouselItem, and AvatarGroup components.

@@ -241,7 +241,28 @@ Accordion displays an expandable/collapsible content section.
                 <li>Merged HTML attributes</li>
             </ul>
 
-            <x-button size="sm" color="primary">Take action</x-button>
-        </div>
-    </x-accordion>
+        <x-button size="sm" color="primary">Take action</x-button>
+    </div>
+</x-accordion>
 </div>
+
+---
+
+## Reference
+
+### Accordion Attributes
+
+| Name      | Default | Description                                                     |
+|-----------|---------|-----------------------------------------------------------------|
+| `name`    | `null`  | The `name` attribute for grouping accordions.                   |
+| `title`   | `null`  | The text displayed in the collapse summary.                     |
+| `icon`    | `null`  | The icon style: `arrow` or `plus`.                              |
+| `open`    | `null`  | Forces the accordion open or closed: `true` or `false`.         |
+| `border`  | `true`  | Shows the default border and background classes.                |
+
+### Accordion Slots
+
+| Name    | Default | Description                                                    |
+|---------|---------|----------------------------------------------------------------|
+| Default | Empty   | The collapsible content displayed below the summary.           |
+| `title` | Empty   | HTML content for the summary, overrides the `title` attribute. |

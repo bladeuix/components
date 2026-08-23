@@ -113,3 +113,15 @@ Progress bar can be used to show the progress of a task or to show the passing o
     </div>
     <span x-text="`Current progress: ${progress}%`" class="text-sm font-bold"></span>
 </div>
+
+---
+
+## Reference
+
+### Progress Attributes
+
+| Name    | Default | Description                                                                                                |
+|---------|---------|------------------------------------------------------------------------------------------------------------|
+| `value` | `null`  | The current progress value. Omit for indeterminate mode.                                                   |
+| `max`   | `100`   | The maximum progress value.                                                                                |
+| `color` | `null`  | The progress color: `primary`, `secondary`, `accent`, `neutral`, `info`, `success`, `warning`, or `error`. |
