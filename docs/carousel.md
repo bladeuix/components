@@ -4,7 +4,33 @@ Carousels show images or content in a scrollable area. Use `modifier` to control
 
 ## Snap to start
 
-```preview-html
+```preview-tabs
+:::code Vanilla blade
+<x-carousel class="rounded-box">
+    @foreach($images as $image)
+        <x-carousel-item image-src="{{ $image->getFullUrl() }}" image-alt="{{ $image->name }}" />
+    @endforeach
+</x-carousel>
+:::
+
+:::code Alpine.js html
+<x-carousel
+     x-data="{
+    current: 0,
+    slides: [
+            { src: 'https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp', alt: 'Carousel slide 1' },
+            { src: 'https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp', alt: 'Carousel slide 2' }
+        ]
+    }" 
+    class="rounded-box"
+>
+    <template x-for="(slide, index) in slides" x-bind:key="index">
+        <x-carousel-item x-bind:image-src="slide.src" x-bind:image-alt="slide.alt" />
+    </template>
+</x-carousel>
+:::
+
+:::preview
 <x-carousel class="rounded-box">
     <x-carousel-item image-src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp" image-alt="Carousel slide 1" />
     <x-carousel-item image-src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp" image-alt="Carousel slide 2" />
@@ -14,6 +40,7 @@ Carousels show images or content in a scrollable area. Use `modifier` to control
     <x-carousel-item image-src="https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.webp" image-alt="Carousel slide 6" />
     <x-carousel-item image-src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.webp" image-alt="Carousel slide 7" />
 </x-carousel>
+:::
 ```
 
 ## Snap to center
@@ -90,8 +117,85 @@ Carousels show images or content in a scrollable area. Use `modifier` to control
 
 ## Indicator buttons
 
-```preview-html
-<div class="alert alert-info">TODO: Figuring the best way to implement this.</div>
+```preview-tabs
+:::code Vanilla html
+<div>
+    <div id="carousel" class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+            <img src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp" class="w-full"/>
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 justify-between">
+                <a href="#slide4" class="btn btn-circle">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+            <img src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp" class="w-full"/>
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 justify-between">
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+            <img src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp" class="w-full"/>
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 justify-between">
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+            <img src="https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp" class="w-full"/>
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 justify-between">
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+        </div>
+    </div>
+    <div class="flex w-full justify-center gap-2 py-2">
+        <a href="#slide1" class="btn btn-xs btn-primary">1</a>
+        <a href="#slide2" class="btn btn-xs">2</a>
+        <a href="#slide3" class="btn btn-xs">3</a>
+        <a href="#slide4" class="btn btn-xs">4</a>
+    </div>
+</div>
+:::
+
+:::code Alpine.js html
+<div x-data="{
+    current: 0,
+    slides: [
+        { src: 'https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp', alt: 'Carousel slide 1' },
+        { src: 'https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp', alt: 'Carousel slide 2' },
+        { src: 'https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp', alt: 'Carousel slide 3' },
+        { src: 'https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp', alt: 'Carousel slide 4' }
+    ]
+}">
+    <x-carousel class="rounded-box">
+        <template x-for="(slide, index) in slides" x-bind:key="index">
+            <x-carousel-item x-bind:image-src="slide.src" x-bind:image-alt="slide.alt" />
+        </template>
+    </x-carousel>
+    <div class="flex w-full justify-center gap-2 py-2">
+        <template x-for="(slide, index) in slides" x-bind:key="index">
+            <button class="btn btn-xs" x-bind:class="{ 'btn-primary': current === index }" @click="current = index" x-text="index + 1"></button>
+        </template>
+    </div>
+</div>
+:::
+
+:::preview
+<x-carousel class="rounded-box">
+    <x-carousel-item image-src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp" image-alt="Carousel slide 1" />
+    <x-carousel-item image-src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp" image-alt="Carousel slide 2" />
+    <x-carousel-item image-src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp" image-alt="Carousel slide 3" />
+    <x-carousel-item image-src="https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp" image-alt="Carousel slide 4" />
+</x-carousel>
+<div class="flex w-full justify-center gap-2 py-2">
+    <a href="#slide1" class="btn btn-xs btn-primary">1</a>
+    <a href="#slide2" class="btn btn-xs">2</a>
+    <a href="#slide3" class="btn btn-xs">3</a>
+    <a href="#slide4" class="btn btn-xs">4</a>
+</div>
+:::
 ```
 
 ## Previous and next buttons

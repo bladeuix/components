@@ -2,8 +2,33 @@
 
 Buttons allow the user to take actions or make choices.
 
-```preview-html
+```preview-tabs
+:::code Vanilla html
 <x-button>Default</x-button>
+:::
+
+:::code Alpine.js html
+<x-button @click="alert('Button clicked!')">Default</x-button>
+:::
+
+:::code Livewire blade
+<x-button wire:click="download">Default</x-button>
+:::
+
+:::code HTMX html
+<x-button
+    hx-post="/clicked"
+    hx-trigger="click"
+    hx-target="#parent-div"
+    hx-swap="outerHTML"
+>
+    Default
+</x-button>
+:::
+
+:::preview
+<x-button>Default</x-button>
+:::
 ```
 
 ## Button sizes
@@ -82,22 +107,6 @@ Buttons allow the user to take actions or make choices.
 ```preview-html
 <x-button class="lg:btn-xl xl:btn-primary xl:btn-block!">
     Responsive Button
-</x-button>
-```
-
-## Advance
-
-```preview-html
-<x-button
-        type="button"
-        onclick="alert('Button clicked!')"
-        id="main-action-btn"
-        name="submit-action"
-        title="Click to trigger an alert"
-        aria-label="Trigger a greeting alert"
-        aria-pressed="false"
->
-    JS Attributes
 </x-button>
 ```
 
