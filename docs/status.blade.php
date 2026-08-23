@@ -131,3 +131,15 @@ Status is a really small icon to visually show the current status of an element,
         </x-button>
     </div>
 </div>
+
+---
+
+## Reference
+
+### Status Attributes
+
+| Name        | Default | Description                                                                                              |
+|-------------|---------|----------------------------------------------------------------------------------------------------------|
+| `color`     | `null`  | The status color: `neutral`, `primary`, `secondary`, `accent`, `info`, `success`, `warning`, or `error`. |
+| `size`      | `null`  | The status size: `xs`, `sm`, `md`, `lg`, or `xl`.                                                        |
+| `animation` | `null`  | The animation style: `ping` or `bounce`.                                                                 |

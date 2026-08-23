@@ -210,3 +210,23 @@ Buttons allow the user to take actions or make choices.
         JS Attributes
     </x-button>
 </div>
+
+---
+
+## Reference
+
+### Button Attributes
+
+| Name      | Default | Description                                                                                              |
+|-----------|---------|----------------------------------------------------------------------------------------------------------|
+| `size`    | `null`  | The button size: `xs`, `sm`, `md`, `lg`, or `xl`.                                                        |
+| `color`   | `null`  | The button color: `neutral`, `primary`, `secondary`, `accent`, `info`, `success`, `warning`, or `error`. |
+| `state`   | `null`  | The button state: `active` or `disabled`.                                                                |
+| `shape`   | `null`  | The button shape: `square`, `circle`, `wide`, or `block`.                                                |
+| `variant` | `null`  | The button variant: `ghost`, `link`, `soft`, `outline`, or `dashed`.                                     |
+
+### Button Slot
+
+| Name    | Default | Description                |
+|---------|---------|----------------------------|
+| Default | Empty   | The button label content.  |

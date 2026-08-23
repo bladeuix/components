@@ -284,3 +284,21 @@ Badges are used to inform the user of the status of specific data.
         12 pending
     </x-badge>
 </div>
+
+---
+
+## Reference
+
+### Badge Attributes
+
+| Name      | Default | Description                                                                                             |
+|-----------|---------|---------------------------------------------------------------------------------------------------------|
+| `size`    | `null`  | The badge size: `xs`, `sm`, `md`, `lg`, or `xl`.                                                        |
+| `color`   | `null`  | The badge color: `primary`, `secondary`, `accent`, `neutral`, `info`, `success`, `warning`, or `error`. |
+| `variant` | `null`  | The badge variant: `soft`, `outline`, `dash`, or `ghost`.                                               |
+
+### Badge Slot
+
+| Name    | Default | Description          |
+|---------|---------|----------------------|
+| Default | Empty   | The badge content.   |

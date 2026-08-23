@@ -223,3 +223,39 @@ Use the named `icon` slot for each tab icon. The default slot remains the adjace
         <x-tab name="disabled-tabs" label="Active" active class="border-base-300 bg-base-100 p-6">Active content</x-tab>
     </x-tabs>
 </div>
+
+---
+
+## Reference
+
+### Tabs Attributes
+
+| Name        | Default | Description                                     |
+|-------------|---------|-------------------------------------------------|
+| `style`     | `null`  | The tabs style: `box`, `border`, or `lift`.     |
+| `placement` | `null`  | The tab placement: `top` or `bottom`.           |
+| `size`      | `null`  | The tabs size: `xs`, `sm`, `md`, `lg`, or `xl`. |
+
+### Tabs Slot
+
+| Name    | Default | Description                                     |
+|---------|---------|-------------------------------------------------|
+| Default | Empty   | The `Tab` components displayed in the tab list. |
+
+### Tab Attributes
+
+| Name       | Default  | Description                                           |
+|------------|----------|-------------------------------------------------------|
+| `label`    | Required | The text displayed in the tab.                        |
+| `name`     | Required | The shared name for all radio tabs in a group.        |
+| `href`     | `null`   | Renders the tab as a link instead of a radio control. |
+| `active`   | `false`  | Marks the tab as active.                              |
+| `disabled` | `false`  | Disables the tab.                                     |
+
+
+### Tab Slot
+
+| Name    | Default | Description                                |
+|---------|---------|--------------------------------------------|
+| Default | Empty   | The content panel displayed below the tab. |
+| `icon`  | Empty   | The icon displayed before the tab label.   |

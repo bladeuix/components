@@ -79,3 +79,25 @@ If you set max-width or the list gets larger than the container it will scroll.
         <x-breadcrumb-link>Long text 5</x-breadcrumb-link>
     </x-breadcrumbs>
 </div>
+
+---
+
+## Reference
+
+### Breadcrumbs Slot
+
+| Name    | Default | Description                              |
+|---------|---------|------------------------------------------|
+| Default | Empty   | The `BreadcrumbLink` components to list. |
+
+### BreadcrumbLink Attributes
+
+| Name   | Default | Description                                                                       |
+|--------|---------|-----------------------------------------------------------------------------------|
+| `href` | `null`  | The link URL. When set, renders as a link; otherwise renders as the current page. |
+
+### BreadcrumbLink Slot
+
+| Name    | Default | Description                          |
+|---------|---------|--------------------------------------|
+| Default | Empty   | The link text or icon content.       |

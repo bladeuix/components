@@ -129,3 +129,15 @@ Loading shows an animation to indicate that something is loading.
         <span x-text="isLoading ? 'Stop Loading' : 'Start Loading'"></span>
     </x-button>
 </div>
+
+---
+
+## Reference
+
+### Loading Attributes
+
+| Name    | Default   | Description                                                                                               |
+|---------|-----------|-----------------------------------------------------------------------------------------------------------|
+| `type`  | `spinner` | The loading type: `spinner`, `dots`, `ring`, `ball`, `bars`, or `infinity`.                               |
+| `size`  | `null`    | The loading size: `xs`, `sm`, `md`, `lg`, or `xl`.                                                        |
+| `color` | `null`    | The loading color: `primary`, `secondary`, `accent`, `neutral`, `info`, `success`, `warning`, or `error`. |

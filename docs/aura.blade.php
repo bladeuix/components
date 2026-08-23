@@ -202,3 +202,20 @@ Aura is a border light effect that can wrap around any component. It is useful f
         <x-button>2000ms duration aura</x-button>
     </x-aura>
 </div>
+
+---
+
+## Reference
+
+### Aura Attributes
+
+| Name    | Default | Description                                                             |
+|---------|---------|-------------------------------------------------------------------------|
+| `style` | `null`  | The aura style: `dual`, `rainbow`, `holo`, `glow`, `gold`, or `silver`. |
+| `size`  | `null`  | The aura size: `xs`, `sm`, `md`, `lg`, or `xl`.                         |
+
+### Aura Slot
+
+| Name    | Default | Description                              |
+|---------|---------|------------------------------------------|
+| Default | Empty   | The element wrapped by the aura effect.  |

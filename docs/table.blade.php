@@ -556,3 +556,54 @@ Use `value` for plain text cells and the default slot when the cell needs richer
         </x-slot:tfoot>
     </x-table>
 </div>
+
+---
+
+## Reference
+
+### Table Attributes
+
+| Name       | Default | Description                                      |
+|------------|---------|--------------------------------------------------|
+| `size`     | `null`  | The table size: `xs`, `sm`, `md`, `lg`, or `xl`. |
+| `zebra`    | `false` | Applies zebra striping to rows.                  |
+| `pin-rows` | `false` | Pins the header and footer rows.                 |
+| `pin-cols` | `false` | Pins the first column.                           |
+
+### Table Slots
+
+| Name    | Default | Description                                      |
+|---------|---------|--------------------------------------------------|
+| Default | Empty   | The `TableRow` components for the table body.    |
+| `thead` | Empty   | Table head content, wrapped in `<thead><tr>`.    |
+| `tfoot` | Empty   | Table footer content, wrapped in `<tfoot><tr>`.  |
+
+### TableRow Slot
+
+| Name    | Default | Description                      |
+|---------|---------|----------------------------------|
+| Default | Empty   | The cell components for the row. |
+
+### TableCell Attributes
+
+| Name    | Default | Description                                             |
+|---------|---------|---------------------------------------------------------|
+| `value` | `null`  | Plain text content. If set, overrides the default slot. |
+
+### TableCell Slot
+
+| Name    | Default | Description                                      |
+|---------|---------|--------------------------------------------------|
+| Default | Empty   | Rich HTML content, used when `value` is not set. |
+
+### TableHeadCell Attributes
+
+| Name    | Default | Description                                             |
+|---------|---------|---------------------------------------------------------|
+| `value` | `null`  | Plain text content. If set, overrides the default slot. |
+
+### TableHeadCell Slot
+
+| Name    | Default | Description                                      |
+|---------|---------|--------------------------------------------------|
+| Default | Empty   | Rich HTML content, used when `value` is not set. |

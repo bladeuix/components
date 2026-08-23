@@ -199,3 +199,23 @@ Avatars show a thumbnail representation of an individual or business in an inter
     <x-avatar abbreviation="SY" rounded class="size-12 bg-neutral text-neutral-content" />
     <x-avatar abbreviation="UI" rounded class="size-8 bg-neutral text-neutral-content text-xs" />
 </div>
+
+---
+
+## Reference
+
+### Avatar Attributes
+
+| Name            | Default | Description                                         |
+|-----------------|---------|-----------------------------------------------------|
+| `presence`      | `null`  | Shows a presence indicator: `online` or `offline`.  |
+| `abbreviation`  | `null`  | Text abbreviation displayed instead of an image.    |
+| `image-src`     | `null`  | The URL of the avatar image.                        |
+| `image-alt`     | `null`  | The alt text for the avatar image.                  |
+| `rounded`       | `false` | Makes the avatar circular.                          |
+
+### AvatarGroup Slot
+
+| Name    | Default | Description                        |
+|---------|---------|------------------------------------|
+| Default | Empty   | The `Avatar` components to group.  |

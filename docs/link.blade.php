@@ -106,3 +106,20 @@ Link adds the missing underline style to links.
         GitHub Repository
     </x-link>
 </div>
+
+---
+
+## Reference
+
+### Link Attributes
+
+| Name    | Default | Description                                                                                            |
+|---------|---------|--------------------------------------------------------------------------------------------------------|
+| `color` | `null`  | The link color: `neutral`, `primary`, `secondary`, `accent`, `info`, `success`, `warning`, or `error`. |
+| `hover` | `false` | Shows the underline only on hover.                                                                     |
+
+### Link Slot
+
+| Name    | Default | Description            |
+|---------|---------|------------------------|
+| Default | Empty   | The link text content. |

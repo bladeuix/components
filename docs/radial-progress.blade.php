@@ -130,3 +130,21 @@ Radial progress can be used to show the progress of a task or to show the passin
         <x-button size="sm" x-on:click="progress = Math.min(100, progress + 10)">Increase</x-button>
     </div>
 </div>
+
+---
+
+## Reference
+
+### RadialProgress Attributes
+
+| Name        | Default | Description                 |
+|-------------|---------|-----------------------------|
+| `value`     | `0`     | The current progress value. |
+| `size`      | `80`    | The size in pixels.         |
+| `thickness` | `8`     | The border thickness.       |
+
+### RadialProgress Slot
+
+| Name    | Default | Description                                      |
+|---------|---------|--------------------------------------------------|
+| Default | Empty   | Content displayed inside the progress indicator. |

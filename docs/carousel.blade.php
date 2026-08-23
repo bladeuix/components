@@ -171,3 +171,33 @@ Carousels show images or content in a scrollable area. Use `modifier` to control
 <div class="component-preview">
     <div class="alert alert-info">TODO: Figuring the best way to implement this.</div>
 </div>
+
+---
+
+## Reference
+
+### Carousel Attributes
+
+| Name        | Default      | Description                                       |
+|-------------|--------------|---------------------------------------------------|
+| `modifier`  | `start`      | The snap alignment: `start`, `center`, or `end`.  |
+| `direction` | `horizontal` | The scroll direction: `horizontal` or `vertical`. |
+
+### Carousel Slot
+
+| Name    | Default | Description                          |
+|---------|---------|--------------------------------------|
+| Default | Empty   | The `CarouselItem` components.       |
+
+### CarouselItem Attributes
+
+| Name        | Default | Description                          |
+|-------------|---------|--------------------------------------|
+| `image-src` | `null`  | The URL of the carousel image.       |
+| `image-alt` | `null`  | The alt text for the carousel image. |
+
+### CarouselItem Slot
+
+| Name    | Default | Description                                   |
+|---------|---------|-----------------------------------------------|
+| Default | Empty   | Additional content displayed after the image. |

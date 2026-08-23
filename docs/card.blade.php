@@ -360,7 +360,31 @@ Use responsive utility classes with `side` to make the card horizontal only at l
     <x-card title="New album is released!" image-src="https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp" image-alt="Album" class="lg:card-side bg-base-100 shadow-sm">
         <p>Click the button to listen on Spotiwhy app.</p>
         <x-slot:actions>
-            <x-button color="primary">Listen</x-button>
-        </x-slot:actions>
-    </x-card>
+        <x-button color="primary">Listen</x-button>
+    </x-slot:actions>
+</x-card>
 </div>
+
+---
+
+## Reference
+
+### Card Attributes
+
+| Name           | Default | Description                                     |
+|----------------|---------|-------------------------------------------------|
+| `size`         | `null`  | The card size: `xs`, `sm`, `md`, `lg`, or `xl`. |
+| `style`        | `null`  | The card style: `border` or `dash`.             |
+| `title`        | `null`  | The card title displayed above the body.        |
+| `image-src`    | `null`  | The URL of the card image.                      |
+| `image-alt`    | `null`  | The alt text for the card image.                |
+| `image-bottom` | `false` | Places the image below the card body.           |
+| `image-full`   | `false` | Renders the image as a full background.         |
+| `side`         | `false` | Places the image beside the card body.          |
+
+### Card Slots
+
+| Name      | Default | Description                               |
+|-----------|---------|-------------------------------------------|
+| Default   | Empty   | The card body content.                    |
+| `actions` | Empty   | Action buttons or elements at the bottom. |
