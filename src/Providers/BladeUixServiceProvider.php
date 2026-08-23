@@ -20,9 +20,15 @@ class BladeUixServiceProvider extends ServiceProvider
 
     public function boot(): void
     {
+        $this->loadJsonTranslationsFrom(path: __DIR__.'/../../lang');
+
         $this->publishes(paths: [
             __DIR__.'/../../config/blade-uix.php' => config_path(path: 'blade-uix.php'),
         ], groups: 'blade-uix-config');
+
+        $this->publishes(paths: [
+            __DIR__.'/../../lang' => lang_path(path: 'vendor/blade-uix'),
+        ], groups: 'blade-uix-translations');
 
         $prefix = config(key: 'blade-uix.prefix');
 
