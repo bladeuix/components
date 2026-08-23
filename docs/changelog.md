@@ -2,7 +2,7 @@
 
 High-level changes for each BladeUIX DaisyUI release. For complete details, see the [GitHub releases](https://github.com/bladeuix/components/releases).
 
-## v3.0.0 - Unreleased
+## v3.0.0 - 2026-08-23
 
 - Added Checkbox, Radio, Tabs, and Tab components.
 - Renamed the Packagist package from `bladeuix/daisyui` to `bladeuix/components`.
