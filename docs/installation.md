@@ -14,7 +14,7 @@ npm i -D daisyui@latest
 
 ## Package Installation
 
-Install the BladeUIX DaisyUI package via Composer:
+Install the BladeUIX package via Composer:
 
 ```bash
 composer require bladeuix/components
