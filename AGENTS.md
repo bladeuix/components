@@ -30,7 +30,7 @@ This document outlines the basic rules for the project.
 - Documentation pages should be in `docs/{page}.blade.php`.
 - Each page should use Markdown headings and fenced HTML examples, with Blade component markup used for rendered previews where applicable.
 - Document the attributes and slots for every component covered by the page.
-- Use only level-one and level-two Markdown headings; do not use level-three headings.
+- Use only level-one, level-two and level-three Markdown headings;
 - Do not add YAML frontmatter.
 
 ### Useful Commands
