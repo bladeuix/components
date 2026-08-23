@@ -33,6 +33,15 @@ This document outlines the basic rules for the project.
 - Use only level-one, level-two and level-three Markdown headings;
 - Do not add YAML frontmatter.
 
+### Translations
+
+- All markdown text (except fenced code blocks) must be translated to available languages (en, es).
+- Translations are stored in `lang/en.json` and `lang/es.json`.
+- Each translation key is the English text, and the value is the translated text.
+- The `DocumentationSanitizer` applies translations to visible text nodes via `__()`.
+- Fenced code blocks (`<code>`, `<pre>`) are excluded from translation.
+- Maintain key parity between `lang/en.json` and `lang/es.json`.
+
 ### Useful Commands
 
 - `composer format`: Format the code using Laravel Pint.

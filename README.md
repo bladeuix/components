@@ -1,4 +1,4 @@
-# BladeUIX DaisyUI
+# BladeUIX
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/bladeuix/components.svg?style=flat-square)](https://packagist.org/packages/bladeuix/components)
 [![Total Downloads](https://img.shields.io/packagist/dt/bladeuix/components.svg?style=flat-square)](https://packagist.org/packages/bladeuix/components)

@@ -1,6 +1,6 @@
 # Introduction
 
-BladeUIX DaisyUI is a set of components that provides a simple and beautiful way to use [DaisyUI](https://daisyui.com/) in Laravel Blade templates.
+BladeUIX is a set of components that provides a simple and beautiful way to use [DaisyUI](https://daisyui.com/) in Laravel Blade templates.
 
 ## What is DaisyUI?
 
@@ -15,9 +15,9 @@ BladeUIX DaisyUI is a set of components that provides a simple and beautiful way
 - **Highly Customizable:** Since it's built on top of Tailwind CSS, you can still use utility classes to customize every detail.
 - **Built-in Themes:** It comes with 35+ ready-to-use themes that can be applied to your entire application instantly.
 
-## Why BladeUIX DaisyUI?
+## Why BladeUIX?
 
-BladeUIX DaisyUI brings the power of DaisyUI directly into your Laravel applications through native Blade components. It abstracts the class management into clean, semantic components that feel right at home in Laravel.
+BladeUIX brings the power of DaisyUI directly into your Laravel applications through native Blade components. It abstracts the class management into clean, semantic components that feel right at home in Laravel.
 
 ## Benefits for Laravel Development
 
