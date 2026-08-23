@@ -21,7 +21,7 @@ BladeUIX DaisyUI brings the power of DaisyUI directly into your Laravel applicat
 
 ## Benefits for Laravel Development
 
-- **Native Blade Components:** Use components directly in your views with a clean syntax: `<x-button color="primary">Click Me</x-button>`.
+- **Native Blade Components:** Use components directly in your views with a clean syntax.
 - **Semantic Props:** Control component styles using simple props like `color`, `size`, `variant`, `shape`, and `state`. No more messy class strings in your views.
 - **Encapsulated Logic:** All CSS class processing and logic are handled within the Blade component classes, keeping your presentation layer minimal and clean.
 - **Seamless Integration:** It integrates perfectly with your existing Laravel and Tailwind CSS setup.
