@@ -2,8 +2,26 @@
 
 Link adds the missing underline style to links.
 
-```preview-html
+```preview-tabs
+:::code Vanilla html
 <x-link href="#">Click me</x-link>
+:::
+
+:::code Alpine.js html
+<x-link href="#">Click me</x-link>
+:::
+
+:::code Livewire blade
+<x-link href="/" wire:navigate>Click me</x-link>
+:::
+
+:::code HTMX html
+<x-link href="/page" hx-get="/page" hx-push-url="true" hx-target="#content">Click me</x-link>
+:::
+
+:::preview
+<x-link href="#">Click me</x-link>
+:::
 ```
 
 ## Link colors
@@ -33,7 +51,54 @@ Link adds the missing underline style to links.
 
 ## Advance
 
-```preview-html
+```preview-tabs
+:::code Vanilla html
+<x-link
+        href="https://github.com/bladeuix/components"
+        target="_blank"
+        rel="noopener noreferrer"
+        onclick="event.preventDefault(); console.log('Link clicked'); window.location.href = this.href"
+>
+    <p>GitHub Repository</p>
+</x-link>
+:::
+
+:::code Alpine.js html
+<x-link
+        href="https://github.com/bladeuix/components"
+        target="_blank"
+        rel="noopener noreferrer"
+        @click.prevent="console.log('Link clicked'); window.location.href = $el.href"
+>
+    <p>GitHub Repository</p>
+</x-link>
+:::
+
+:::code Livewire blade
+<a
+    href="https://github.com/bladeuix/components"
+    class="link"
+    wire:navigate
+    @click="$dispatch('link-clicked', { url: $el.href })"
+>
+    <p>GitHub Repository</p>
+</a>
+:::
+
+:::code HTMX html
+<x-link
+        href="https://github.com/bladeuix/components"
+        target="_blank"
+        rel="noopener noreferrer"
+        hx-get="/link/click"
+        hx-trigger="click"
+        hx-swap="none"
+>
+    <p>GitHub Repository</p>
+</x-link>
+:::
+
+:::preview
 <x-link
         href="https://github.com/bladeuix/components"
         target="_blank"
@@ -44,6 +109,7 @@ Link adds the missing underline style to links.
 >
     <p>GitHub Repository</p>
 </x-link>
+:::
 ```
 
 ---
