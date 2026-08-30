@@ -6,6 +6,7 @@ High-level changes for each BladeUIX release. For complete details, see the [Git
 
 - Added missing Spanish translations.
 - Update components example code use include AlpineJs, Livewire and HTMX examples
+- Added todo documentation pages for unimplemented components with links to contribute.
 
 ## v3.0.0 - 2026-08-23
 
