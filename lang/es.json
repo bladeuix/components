@@ -596,5 +596,18 @@
   "What is DaisyUI?": "¿Qué es DaisyUI?",
   "Basic Usage": "Uso básico",
   "High-level changes for each BladeUIX release. For complete details, see the": "Cambios de alto nivel para cada versión de BladeUIX. Para obtener todos los detalles, consulta las",
-  "Set": "Establece"
+  "Set": "Establece",
+  "Divider will be used to separate content vertically or horizontally.": "El divisor se utilizará para separar contenido vertical u horizontalmente.",
+  "Divider horizontal": "Divisor horizontal",
+  "Divider with no text": "Divisor sin texto",
+  "Divider with colors": "Divisor con colores",
+  "Divider in different positions": "Divisor en diferentes posiciones",
+  "Divider in different positions (horizontal)": "Divisor en diferentes posiciones (horizontal)",
+  "Divider Attributes": "Atributos del divisor",
+  "The divider color:": "El color del divisor:",
+  "The divider direction:": "La dirección del divisor:",
+  "The divider placement:": "La ubicación del divisor:",
+  "Divider Slot": "Ranura del divisor",
+  "The divider content.": "El contenido del divisor.",
+  "Added Divider component.": "Se agregó el componente Divisor."
 }

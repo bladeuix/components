@@ -44,6 +44,7 @@ class BladeUixServiceProvider extends ServiceProvider
         Blade::component(class: $prefix.'carousel', alias: Components\Carousel::class);
         Blade::component(class: $prefix.'carousel-item', alias: Components\CarouselItem::class);
         Blade::component(class: $prefix.'checkbox', alias: Components\Checkbox::class);
+        Blade::component(class: $prefix.'divider', alias: Components\Divider::class);
         Blade::component(class: $prefix.'link', alias: Components\Link::class);
         Blade::component(class: $prefix.'loading', alias: Components\Loading::class);
         Blade::component(class: $prefix.'progress', alias: Components\Progress::class);
