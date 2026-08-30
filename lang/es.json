@@ -609,5 +609,13 @@
   "The divider placement:": "La ubicación del divisor:",
   "Divider Slot": "Ranura del divisor",
   "The divider content.": "El contenido del divisor.",
-  "Added Divider component.": "Se agregó el componente Divisor."
+  "Added Divider component.": "Se agregó el componente Divisor.",
+  "Kbd is used to show which key is being pressed on the keyboard.": "Kbd se utiliza para mostrar qué tecla se está presionando en el teclado.",
+  "Kbd sizes": "Tamaños de Kbd",
+  "Keyboard shortcuts": "Atajos de teclado",
+  "Kbd with custom classes": "Kbd con clases personalizadas",
+  "Kbd Attributes": "Atributos de Kbd",
+  "The kbd size:": "El tamaño de kbd:",
+  "Kbd Slot": "Ranura de Kbd",
+  "The keyboard key content.": "El contenido de la tecla del teclado."
 }
