@@ -44,12 +44,12 @@ Kbd is used to show which key is being pressed on the keyboard.
 
 ### Kbd Attributes
 
-| Name | Default | Description |
-| --- | --- | --- |
-| `size` | `null` | The kbd size: `xs` , `sm` , `md` , `lg` , or `xl` . |
+| Name   | Default | Description                                         |
+|--------|---------|-----------------------------------------------------|
+| `size` | `null`  | The kbd size: `xs` , `sm` , `md` , `lg` , or `xl` . |
 
 ### Kbd Slot
 
-| Name | Default | Description |
-| --- | --- | --- |
-| Default | Empty | The keyboard key content. |
+| Name    | Default | Description               |
+|---------|---------|---------------------------|
+| Default | Empty   | The keyboard key content. |

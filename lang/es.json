@@ -617,5 +617,10 @@
   "Kbd Attributes": "Atributos de Kbd",
   "The kbd size:": "El tamaño de kbd:",
   "Kbd Slot": "Ranura de Kbd",
-  "The keyboard key content.": "El contenido de la tecla del teclado."
+  "The keyboard key content.": "El contenido de la tecla del teclado.",
+  "Skeleton is a component that can be used to show a loading state of a component.": "Skeleton es un componente que se puede utilizar para mostrar un estado de carga de un componente.",
+  "Skeleton - circle with content": "Skeleton - círculo con contenido",
+  "Skeleton - rectangle with content": "Skeleton - rectángulo con contenido",
+  "skeleton-text - animated gradient text": "skeleton-text - texto con degradado animado",
+  "Animates the text color instead of background color.": "Anima el color del texto en lugar del color de fondo."
 }

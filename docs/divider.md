@@ -72,14 +72,14 @@ Divider will be used to separate content vertically or horizontally.
 
 ### Divider Attributes
 
-| Name | Default | Description |
-| --- | --- | --- |
-| `color` | `null` | The divider color: `neutral` , `primary` , `secondary` , `accent` , `info` , `success` , `warning` , or `error` . |
-| `direction` | `null` | The divider direction: `horizontal` or `vertical` . |
-| `placement` | `null` | The divider placement: `start` or `end` . |
+| Name        | Default | Description                                                                                                       |
+|-------------|---------|-------------------------------------------------------------------------------------------------------------------|
+| `color`     | `null`  | The divider color: `neutral` , `primary` , `secondary` , `accent` , `info` , `success` , `warning` , or `error` . |
+| `direction` | `null`  | The divider direction: `horizontal` or `vertical` .                                                               |
+| `placement` | `null`  | The divider placement: `start` or `end` .                                                                         |
 
 ### Divider Slot
 
-| Name | Default | Description |
-| --- | --- | --- |
-| Default | Empty | The divider content. |
+| Name    | Default | Description          |
+|---------|---------|----------------------|
+| Default | Empty   | The divider content. |
