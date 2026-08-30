@@ -609,5 +609,13 @@
   "The divider placement:": "The divider placement:",
   "Divider Slot": "Divider Slot",
   "The divider content.": "The divider content.",
-  "Added Divider component.": "Added Divider component."
+  "Added Divider component.": "Added Divider component.",
+  "Kbd is used to show which key is being pressed on the keyboard.": "Kbd is used to show which key is being pressed on the keyboard.",
+  "Kbd sizes": "Kbd sizes",
+  "Keyboard shortcuts": "Keyboard shortcuts",
+  "Kbd with custom classes": "Kbd with custom classes",
+  "Kbd Attributes": "Kbd Attributes",
+  "The kbd size:": "The kbd size:",
+  "Kbd Slot": "Kbd Slot",
+  "The keyboard key content.": "The keyboard key content."
 }
