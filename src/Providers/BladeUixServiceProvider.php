@@ -52,6 +52,7 @@ class BladeUixServiceProvider extends ServiceProvider
         Blade::component(class: $prefix.'radial-progress', alias: Components\RadialProgress::class);
         Blade::component(class: $prefix.'radio', alias: Components\Radio::class);
         Blade::component(class: $prefix.'skeleton', alias: Components\Skeleton::class);
+        Blade::component(class: $prefix.'stack', alias: Components\Stack::class);
         Blade::component(class: $prefix.'status', alias: Components\Status::class);
         Blade::component(class: $prefix.'tab', alias: Components\Tab::class);
         Blade::component(class: $prefix.'table', alias: Components\Table::class);

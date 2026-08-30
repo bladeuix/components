@@ -622,5 +622,20 @@
   "Skeleton - circle with content": "Skeleton - círculo con contenido",
   "Skeleton - rectangle with content": "Skeleton - rectángulo con contenido",
   "skeleton-text - animated gradient text": "skeleton-text - texto con degradado animado",
-  "Animates the text color instead of background color.": "Anima el color del texto en lugar del color de fondo."
+  "Animates the text color instead of background color.": "Anima el color del texto en lugar del color de fondo.",
+  "Stack visually puts elements on top of each other.": "Stack coloca visualmente los elementos unos sobre otros.",
+  "You can use": "Puedes usar",
+  "classes to set the width and height of the stack, making all items the same size.": "clases para establecer el ancho y alto del stack, haciendo que todos los elementos tengan el mismo tamaño.",
+  "3 divs in a stack": "3 divs en un stack",
+  "Stacked images": "Imágenes apiladas",
+  "Stacked cards": "Tarjetas apiladas",
+  "Stacked cards (top direction)": "Tarjetas apiladas (dirección superior)",
+  "Stacked cards (start direction)": "Tarjetas apiladas (dirección inicio)",
+  "Stacked cards (end direction)": "Tarjetas apiladas (dirección final)",
+  "Stacked cards with shadow": "Tarjetas apiladas con sombra",
+  "Stacked notification cards": "Tarjetas de notificación apiladas",
+  "Stack Attributes": "Atributos de Stack",
+  "The stack direction:": "La dirección del stack:",
+  "Stack Slot": "Ranura de Stack",
+  "The stacked elements.": "Los elementos apilados."
 }
