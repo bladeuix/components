@@ -622,5 +622,20 @@
   "Skeleton - circle with content": "Skeleton - circle with content",
   "Skeleton - rectangle with content": "Skeleton - rectangle with content",
   "skeleton-text - animated gradient text": "skeleton-text - animated gradient text",
-  "Animates the text color instead of background color.": "Animates the text color instead of background color."
+  "Animates the text color instead of background color.": "Animates the text color instead of background color.",
+  "Stack visually puts elements on top of each other.": "Stack visually puts elements on top of each other.",
+  "You can use": "You can use",
+  "classes to set the width and height of the stack, making all items the same size.": "classes to set the width and height of the stack, making all items the same size.",
+  "3 divs in a stack": "3 divs in a stack",
+  "Stacked images": "Stacked images",
+  "Stacked cards": "Stacked cards",
+  "Stacked cards (top direction)": "Stacked cards (top direction)",
+  "Stacked cards (start direction)": "Stacked cards (start direction)",
+  "Stacked cards (end direction)": "Stacked cards (end direction)",
+  "Stacked cards with shadow": "Stacked cards with shadow",
+  "Stacked notification cards": "Stacked notification cards",
+  "Stack Attributes": "Stack Attributes",
+  "The stack direction:": "The stack direction:",
+  "Stack Slot": "Stack Slot",
+  "The stacked elements.": "The stacked elements."
 }
