@@ -608,5 +608,6 @@
   "The divider direction:": "La dirección del divisor:",
   "The divider placement:": "La ubicación del divisor:",
   "Divider Slot": "Ranura del divisor",
-  "The divider content.": "El contenido del divisor."
+  "The divider content.": "El contenido del divisor.",
+  "Added Divider component.": "Se agregó el componente Divisor."
 }
