@@ -6,7 +6,6 @@ namespace BladeUix\View\Components;
 
 use Closure;
 use Illuminate\View\Component;
-use Illuminate\View\ComponentSlot;
 
 class Accordion extends Component
 {
@@ -22,12 +21,10 @@ class Accordion extends Component
     public function render(): Closure
     {
         return function (array $data): string {
-            $title = $this->titleContent($data);
-
-            return <<<blade
-                <details {{ \$attributes->class(\$classes())->merge(\$detailsAttributes()) }}>
-                    <summary class="collapse-title">{$title}</summary>
-                    <div class="collapse-content">{{ \$slot }}</div>
+            return <<<'blade'
+                <details {{ $attributes->class($classes())->merge($detailsAttributes()) }}>
+                    <summary class="collapse-title">{{ $title }}</summary>
+                    <div class="collapse-content">{{ $slot }}</div>
                 </details>
             blade;
         };
@@ -49,17 +46,6 @@ class Accordion extends Component
             'name' => $this->name,
             'open' => $this->open === true ? true : null,
         ], fn ($value) => $value !== null && $value !== false);
-    }
-
-    public function titleContent(array $data): string
-    {
-        $titleSlot = $data['title'] ?? null;
-
-        if ($titleSlot instanceof ComponentSlot) {
-            return $titleSlot->toHtml();
-        }
-
-        return e($this->title ?? '');
     }
 
     private function borderClasses(): array

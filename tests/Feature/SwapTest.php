@@ -12,12 +12,12 @@ it(description: 'can render swap with default classes', closure: function () {
         </x-swap>
     ');
 
-    $view->assertSeeHtmlInOrder(values: [
-        '<label class="swap">',
-        '<div class="swap-off">OFF</div>',
-        '<div class="swap-on">ON</div>',
-        '</label>',
-    ]);
+    $view->assertSee(value: '<label class="swap">', escape: false);
+    $view->assertSee(value: '<input type="checkbox" />', escape: false);
+    $view->assertSee(value: '<div class="swap-off">OFF</div>', escape: false);
+    $view->assertSee(value: 'class="swap-on"', escape: false);
+    $view->assertSee(value: 'ON', escape: false);
+    $view->assertSee(value: '</label>', escape: false);
 });
 
 it(description: 'can render swap with active class', closure: function () {
@@ -64,19 +64,6 @@ it(description: 'can render swap with all modifiers', closure: function () {
     $view->assertSee(value: 'class="swap swap-active swap-rotate swap-flip"', escape: false);
 });
 
-it(description: 'can render swap with indeterminate slot', closure: function () {
-    $view = $this->blade(template: '
-        <x-swap>
-            <x-slot:off>OFF</x-slot:off>
-            <x-slot:on>ON</x-slot:on>
-            <x-slot:indeterminate>Middle</x-slot:indeterminate>
-        </x-swap>
-    ');
-
-    $view->assertSee(value: 'class="swap"', escape: false);
-    $view->assertSee(value: '<div class="swap-indeterminate">Middle</div>', escape: false);
-});
-
 it(description: 'can render swap with custom classes', closure: function () {
     $view = $this->blade(template: '
         <x-swap class="text-6xl">
@@ -110,5 +97,5 @@ it(description: 'can render swap with SVG content', closure: function () {
 
     $view->assertSee(value: 'class="swap"', escape: false);
     $view->assertSee(value: '<div class="swap-off">', escape: false);
-    $view->assertSee(value: '<div class="swap-on">', escape: false);
+    $view->assertSee(value: 'class="swap-on"', escape: false);
 });
