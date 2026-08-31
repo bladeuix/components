@@ -4,7 +4,7 @@ High-level changes for each BladeUIX release. For complete details, see the [Git
 
 ## v3.1.0 - Unreleased
 
-- Added Skeleton, Kbd, Divider, and Stack components.
+- Added Skeleton, Kbd, Divider, Stack, and Toast components.
 - Added missing Spanish translations.
 - Update components example code use include AlpineJs, Livewire and HTMX examples.
 - Added todo documentation pages for unimplemented components with links to contribute.

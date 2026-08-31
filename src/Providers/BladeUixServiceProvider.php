@@ -60,5 +60,6 @@ class BladeUixServiceProvider extends ServiceProvider
         Blade::component(class: $prefix.'table-head-cell', alias: Components\TableHeadCell::class);
         Blade::component(class: $prefix.'table-row', alias: Components\TableRow::class);
         Blade::component(class: $prefix.'tabs', alias: Components\Tabs::class);
+        Blade::component(class: $prefix.'toast', alias: Components\Toast::class);
     }
 }

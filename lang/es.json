@@ -637,5 +637,21 @@
   "Stack Attributes": "Atributos de Stack",
   "The stack direction:": "La dirección del stack:",
   "Stack Slot": "Ranura de Stack",
-  "The stacked elements.": "Los elementos apilados."
+  "The stacked elements.": "Los elementos apilados.",
+  "Toast is a wrapper to stack elements, positioned on the corner of page.": "Toast es un contenedor para apilar elementos, posicionado en la esquina de la página.",
+  "Toast with alert inside": "Toast con alerta dentro",
+  "toast-top toast-start": "toast-top toast-start",
+  "toast-top toast-center": "toast-top toast-center",
+  "toast-top toast-end": "toast-top toast-end",
+  "toast-start toast-middle": "toast-start toast-middle",
+  "toast-center toast-middle": "toast-center toast-middle",
+  "toast-end toast-middle": "toast-end toast-middle",
+  "toast-start toast-bottom (default)": "toast-start toast-bottom (predeterminado)",
+  "toast-center toast-bottom (default)": "toast-center toast-bottom (predeterminado)",
+  "toast-end (default) toast-bottom (default)": "toast-end (predeterminado) toast-bottom (predeterminado)",
+  "Toast Attributes": "Atributos de Toast",
+  "The toast horizontal alignment:": "La alineación horizontal del toast:",
+  "The toast vertical alignment:": "La alineación vertical del toast:",
+  "Toast Slot": "Ranura de Toast",
+  "The toast content (alerts, notifications, etc.).": "El contenido del toast (alertas, notificaciones, etc.)."
 }

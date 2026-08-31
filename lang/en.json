@@ -637,5 +637,21 @@
   "Stack Attributes": "Stack Attributes",
   "The stack direction:": "The stack direction:",
   "Stack Slot": "Stack Slot",
-  "The stacked elements.": "The stacked elements."
+  "The stacked elements.": "The stacked elements.",
+  "Toast is a wrapper to stack elements, positioned on the corner of page.": "Toast is a wrapper to stack elements, positioned on the corner of page.",
+  "Toast with alert inside": "Toast with alert inside",
+  "toast-top toast-start": "toast-top toast-start",
+  "toast-top toast-center": "toast-top toast-center",
+  "toast-top toast-end": "toast-top toast-end",
+  "toast-start toast-middle": "toast-start toast-middle",
+  "toast-center toast-middle": "toast-center toast-middle",
+  "toast-end toast-middle": "toast-end toast-middle",
+  "toast-start toast-bottom (default)": "toast-start toast-bottom (default)",
+  "toast-center toast-bottom (default)": "toast-center toast-bottom (default)",
+  "toast-end (default) toast-bottom (default)": "toast-end (default) toast-bottom (default)",
+  "Toast Attributes": "Toast Attributes",
+  "The toast horizontal alignment:": "The toast horizontal alignment:",
+  "The toast vertical alignment:": "The toast vertical alignment:",
+  "Toast Slot": "Toast Slot",
+  "The toast content (alerts, notifications, etc.).": "The toast content (alerts, notifications, etc.)."
 }
