@@ -637,5 +637,22 @@
   "Stack Attributes": "Stack Attributes",
   "The stack direction:": "The stack direction:",
   "Stack Slot": "Stack Slot",
-  "The stacked elements.": "The stacked elements."
+  "The stacked elements.": "The stacked elements.",
+  "Alert informs users about important events.": "Alert informs users about important events.",
+  "Alert": "Alert",
+  "Info color": "Info color",
+  "Success color": "Success color",
+  "Warning color": "Warning color",
+  "Error color": "Error color",
+  "Alert soft style": "Alert soft style",
+  "Alert outline style": "Alert outline style",
+  "Alert dash style": "Alert dash style",
+  "Alert with buttons + responsive": "Alert with buttons + responsive",
+  "Alert with title and description": "Alert with title and description",
+  "Alert Attributes": "Alert Attributes",
+  "The alert color:": "The alert color:",
+  "The layout direction:": "The layout direction:",
+  "The alert style:": "The alert style:",
+  "Alert Slot": "Alert Slot",
+  "The alert content.": "The alert content."
 }

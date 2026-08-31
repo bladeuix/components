@@ -33,6 +33,7 @@ class BladeUixServiceProvider extends ServiceProvider
         $prefix = config(key: 'blade-uix.prefix');
 
         Blade::component(class: $prefix.'accordion', alias: Components\Accordion::class);
+        Blade::component(class: $prefix.'alert', alias: Components\Alert::class);
         Blade::component(class: $prefix.'aura', alias: Components\Aura::class);
         Blade::component(class: $prefix.'avatar', alias: Components\Avatar::class);
         Blade::component(class: $prefix.'avatar-group', alias: Components\AvatarGroup::class);

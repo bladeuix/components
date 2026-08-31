@@ -637,5 +637,22 @@
   "Stack Attributes": "Atributos de Stack",
   "The stack direction:": "La dirección del stack:",
   "Stack Slot": "Ranura de Stack",
-  "The stacked elements.": "Los elementos apilados."
+  "The stacked elements.": "Los elementos apilados.",
+  "Alert informs users about important events.": "Alerta informa a los usuarios sobre eventos importantes.",
+  "Alert": "Alerta",
+  "Info color": "Color de información",
+  "Success color": "Color de éxito",
+  "Warning color": "Color de advertencia",
+  "Error color": "Color de error",
+  "Alert soft style": "Estilo suave de alerta",
+  "Alert outline style": "Estilo de contorno de alerta",
+  "Alert dash style": "Estilo de guión de alerta",
+  "Alert with buttons + responsive": "Alerta con botones + responsivo",
+  "Alert with title and description": "Alerta con título y descripción",
+  "Alert Attributes": "Atributos de alerta",
+  "The alert color:": "El color de la alerta:",
+  "The layout direction:": "La dirección del diseño:",
+  "The alert style:": "El estilo de la alerta:",
+  "Alert Slot": "Ranura de alerta",
+  "The alert content.": "El contenido de la alerta."
 }
