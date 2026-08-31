@@ -2,9 +2,13 @@
 
 High-level changes for each BladeUIX release. For complete details, see the [GitHub releases](https://github.com/bladeuix/components/releases).
 
-## v3.1.0 - Unreleased
+## v3.2.0 - Unreleased
 
-- Added Alert, Mask, Swap, Skeleton, Kbd, Divider, Stack, Indicator, IndicatorItem, and Diff components.
+- 
+
+## v3.1.0 - 2026-09-01
+
+- Added Alert, Mask, Swap, Skeleton, Kbd, Divider, Stack, Indicator, IndicatorItem, Diff, and OTP components.
 - Added missing Spanish translations.
 - Update components example code use include AlpineJs, Livewire and HTMX examples.
 - Added todo documentation pages for unimplemented components with links to contribute.
