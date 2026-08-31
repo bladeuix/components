@@ -14,8 +14,8 @@ it(description: 'can render swap with default classes', closure: function () {
 
     $view->assertSeeHtmlInOrder(values: [
         '<label class="swap">',
-        'OFF',
-        'ON',
+        '<div class="swap-off">OFF</div>',
+        '<div class="swap-on">ON</div>',
         '</label>',
     ]);
 });
@@ -74,7 +74,7 @@ it(description: 'can render swap with indeterminate slot', closure: function () 
     ');
 
     $view->assertSee(value: 'class="swap"', escape: false);
-    $view->assertSee(value: 'Middle', escape: false);
+    $view->assertSee(value: '<div class="swap-indeterminate">Middle</div>', escape: false);
 });
 
 it(description: 'can render swap with custom classes', closure: function () {
@@ -103,12 +103,12 @@ it(description: 'can render swap with additional attributes', closure: function 
 it(description: 'can render swap with SVG content', closure: function () {
     $view = $this->blade(template: '
         <x-swap>
-            <x-slot:off><svg class="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M3,9H7L12,4V20L7,15H3V9"/></svg></x-slot:off>
-            <x-slot:on><svg class="swap-on fill-current" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M14,3.23V5.29C16.89,6.15 19,8.83 19,12C19,15.17 16.89,17.84 14,18.7V20.77C18,19.86 21,16.28 21,12C21,7.72 18,4.14 14,3.23"/></svg></x-slot:on>
+            <x-slot:off><svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M3,9H7L12,4V20L7,15H3V9"/></svg></x-slot:off>
+            <x-slot:on><svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M14,3.23V5.29C16.89,6.15 19,8.83 19,12C19,15.17 16.89,17.84 14,18.7V20.77C18,19.86 21,16.28 21,12C21,7.72 18,4.14 14,3.23"/></svg></x-slot:on>
         </x-swap>
     ');
 
     $view->assertSee(value: 'class="swap"', escape: false);
-    $view->assertSee(value: '<svg class="swap-off fill-current"', escape: false);
-    $view->assertSee(value: '<svg class="swap-on fill-current"', escape: false);
+    $view->assertSee(value: '<div class="swap-off">', escape: false);
+    $view->assertSee(value: '<div class="swap-on">', escape: false);
 });
