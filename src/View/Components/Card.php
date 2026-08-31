@@ -26,15 +26,15 @@ class Card extends Component
             $style = $data['attributes']->get('style');
             $classes = var_export($this->classes($style), true);
 
-            return <<<blade
-                <div {{ \$attributes->except('style', 'title', 'image-src', 'image-alt', 'image-bottom')->class($classes)->merge() }}>
-                    @if (\$imageSrc && ! \$imageBottom)<figure><img src="{{ \$imageSrc }}" alt="{{ \$imageAlt }}"></figure>@endif
+            return <<<'blade'
+                <div {{ $attributes->except('style', 'title', 'image-src', 'image-alt', 'image-bottom')->class($classes())->merge() }}>
+                    @if ($imageSrc && ! $imageBottom)<figure><img src="{{ $imageSrc }}" alt="{{ $imageAlt }}"></figure>@endif
                     <div class="card-body">
-                        @if (\$title)<h2 class="card-title">{{ \$title }}</h2>@endif
-                        {{ \$slot }}
-                        @isset(\$actions)<div class="card-actions">{{ \$actions }}</div>@endisset
+                        @if ($title)<h2 class="card-title">{{ $title }}</h2>@endif
+                        {{ $slot }}
+                        @isset($actions)<div {{ $actions->attributes->class(['card-actions']) }}>{{ $actions }}</div>@endisset
                     </div>
-                    @if (\$imageSrc && \$imageBottom)<figure><img src="{{ \$imageSrc }}" alt="{{ \$imageAlt }}"></figure>@endif
+                    @if ($imageSrc && $imageBottom)<figure><img src="{{ $imageSrc }}" alt="{{ $imageAlt }}"></figure>@endif
                 </div>
             blade;
         };
