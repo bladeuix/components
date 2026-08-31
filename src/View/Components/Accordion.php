@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace BladeUix\View\Components;
 
-use Closure;
 use Illuminate\View\Component;
 
 class Accordion extends Component
@@ -18,16 +17,14 @@ class Accordion extends Component
     ) {
     }
 
-    public function render(): Closure
+    public function render(): string
     {
-        return function (): string {
-            return <<<'blade'
-                <details {{ $attributes->class($classes())->merge($detailsAttributes()) }}>
-                    <summary {{ $title->attributes->class(['collapse-title']) }}>{{ $title }}</summary>
-                    <div class="collapse-content">{{ $slot }}</div>
-                </details>
-            blade;
-        };
+        return <<<'blade'
+            <details {{ $attributes->class($classes())->merge($detailsAttributes()) }}>
+                <summary {{ $title->attributes->class(['collapse-title']) }}>{{ $title }}</summary>
+                <div class="collapse-content">{{ $slot }}</div>
+            </details>
+        blade;
     }
 
     public function classes(): array
