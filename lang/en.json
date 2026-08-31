@@ -677,5 +677,21 @@
   "for first half,": "for first half,",
   "for second half.": "for second half.",
   "Mask Slot": "Mask Slot",
-  "The content to mask (typically an image).": "The content to mask (typically an image)."
+  "The content to mask (typically an image).": "The content to mask (typically an image).",
+  "Swap allows you to toggle the visibility of two elements using a checkbox or a class name.": "Swap allows you to toggle the visibility of two elements using a checkbox or a class name.",
+  "Text swap": "Text swap",
+  "Volume icons": "Volume icons",
+  "Rotate effect": "Rotate effect",
+  "Hamburger button": "Hamburger button",
+  "Flip effect": "Flip effect",
+  "Activate using class name": "Activate using class name",
+  "Instead of working with click, it shows the swap-on item if you add the active attribute. You can toggle this using JavaScript.": "Instead of working with click, it shows the swap-on item if you add the active attribute. You can toggle this using JavaScript.",
+  "Swap Attributes": "Swap Attributes",
+  "Activates the swap (no need for checkbox).": "Activates the swap (no need for checkbox).",
+  "Adds rotate effect to swap.": "Adds rotate effect to swap.",
+  "Adds flip effect to swap.": "Adds flip effect to swap.",
+  "Swap Slots": "Swap Slots",
+  "The child element that should be visible when swap is active.": "The child element that should be visible when swap is active.",
+  "The child element that should be visible when swap is not active.": "The child element that should be visible when swap is not active.",
+  "The child element that should be visible when swap is indeterminate.": "The child element that should be visible when swap is indeterminate."
 }
