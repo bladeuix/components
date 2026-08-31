@@ -226,6 +226,12 @@ Indicators are used to place an element on the corner of another element.
 
 ## Reference
 
+### Indicator Attributes
+
+| Name | Default | Description                     |
+|------|---------|---------------------------------|
+| —    | —       | The component accepts no props. |
+
 ### Indicator Slot
 
 | Name    | Default | Description                                                                          |

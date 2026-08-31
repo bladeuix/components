@@ -8,10 +8,6 @@ use Illuminate\View\Component;
 
 class Indicator extends Component
 {
-    public function __construct(
-    ) {
-    }
-
     public function render(): string
     {
         return <<<'blade'
