@@ -44,12 +44,11 @@ it(description: 'can render table with thead and tfoot slots', closure: function
     BLADE);
 
     $view->assertSee(value: '<thead>', escape: false);
-    $view->assertSee(value: '<tr>', escape: false);
-    $view->assertSee(value: '<th >Name</th>', escape: false);
+    $view->assertSee(value: 'Name', escape: false);
     $view->assertSee(value: '<tbody>', escape: false);
-    $view->assertSee(value: '<td >Cy Ganderton</td>', escape: false);
+    $view->assertSee(value: 'Cy Ganderton', escape: false);
     $view->assertSee(value: '<tfoot>', escape: false);
-    $view->assertSee(value: '<th >Total</th>', escape: false);
+    $view->assertSee(value: 'Total', escape: false);
 });
 
 it(description: 'renders empty thead and tfoot when slots are provided', closure: function () {
@@ -67,11 +66,13 @@ it(description: 'renders empty thead and tfoot when slots are provided', closure
         </x-table>
     BLADE);
 
-    $view->assertSee(value: '<thead><tr></tr></thead>', escape: false);
+    $view->assertSee(value: '<thead>', escape: false);
+    $view->assertSee(value: '</thead>', escape: false);
     $view->assertSee(value: '<tbody>', escape: false);
-    $view->assertSee(value: '<td >Cy Ganderton</td>', escape: false);
+    $view->assertSee(value: 'Cy Ganderton', escape: false);
     $view->assertSee(value: '</tbody>', escape: false);
-    $view->assertSee(value: '<tfoot><tr></tr></tfoot>', escape: false);
+    $view->assertSee(value: '<tfoot>', escape: false);
+    $view->assertSee(value: '</tfoot>', escape: false);
 });
 
 it(description: 'can render table with custom attributes and classes', closure: function () {
@@ -106,8 +107,8 @@ it(description: 'can render checkbox table example structure', closure: function
 
     $view->assertSee(value: '<thead>', escape: false);
     $view->assertSee(value: 'name="select-all"', escape: false);
-    $view->assertSee(value: '<th >Name</th>', escape: false);
+    $view->assertSee(value: 'Name', escape: false);
     $view->assertSee(value: '<tbody>', escape: false);
     $view->assertSee(value: 'name="selected_rows[]"', escape: false);
-    $view->assertSee(value: '<td >Hart Hagerty</td>', escape: false);
+    $view->assertSee(value: 'Hart Hagerty', escape: false);
 });

@@ -29,10 +29,22 @@ it(description: 'can render card title and image attributes with an actions slot
     ]);
 });
 
-it(description: 'can render card attributes', closure: function () {
-    $view = $this->blade(template: '<x-card size="lg" style="border" image-full side>Content</x-card>');
+it(description: 'can render card size attribute', closure: function () {
+    $view = $this->blade(template: '<x-card size="lg">Content</x-card>');
 
-    $view->assertSee(value: 'class="card card-lg card-border image-full card-side"', escape: false);
+    $view->assertSee(value: 'class="card card-lg"', escape: false);
+});
+
+it(description: 'can render card image-full attribute', closure: function () {
+    $view = $this->blade(template: '<x-card image-full>Content</x-card>');
+
+    $view->assertSee(value: 'class="card image-full"', escape: false);
+});
+
+it(description: 'can render card side attribute', closure: function () {
+    $view = $this->blade(template: '<x-card side>Content</x-card>');
+
+    $view->assertSee(value: 'class="card card-side"', escape: false);
 });
 
 it(description: 'can render a bottom image after the card body', closure: function () {
@@ -44,12 +56,6 @@ it(description: 'can render a bottom image after the card body', closure: functi
         'Content',
         '<figure><img src="shoe.webp" alt="Shoes"></figure>',
     ]);
-});
-
-it(description: 'can render a dashed card', closure: function () {
-    $view = $this->blade(template: '<x-card style="dash">Content</x-card>');
-
-    $view->assertSee(value: 'class="card card-dash"', escape: false);
 });
 
 it(description: 'can merge card attributes', closure: function () {

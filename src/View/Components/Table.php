@@ -21,13 +21,13 @@ class Table extends Component
         return <<<'blade'
             <table {{ $attributes->class($classes())->merge() }}>
                 @isset($thead)
-                    <thead><tr>{{ $thead }}</tr></thead>
+                    <thead><tr {{ $thead->attributes }}>{{ $thead }}</tr></thead>
                 @endisset
 
                 <tbody>{{ $slot }}</tbody>
 
                 @isset($tfoot)
-                    <tfoot><tr>{{ $tfoot }}</tr></tfoot>
+                    <tfoot><tr {{ $tfoot->attributes }}>{{ $tfoot }}</tr></tfoot>
                 @endisset
             </table>
         blade;

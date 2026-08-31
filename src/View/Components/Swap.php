@@ -21,9 +21,9 @@ class Swap extends Component
             <label {{ $attributes->class($classes())->merge() }}>
                 <input type="checkbox" />
                 <div {{ $off->attributes->class(['swap-off']) }}>{{ $off }}</div>
-                <div  {{ $on->attributes->class(['swap-on']) }}>{{ $on }}</div>
+                <div {{ $on->attributes->class(['swap-on']) }}>{{ $on }}</div>
                 @isset($indeterminate)
-                    <div {{ $swap-indeterminate->attributes->class(['swap-swap-indeterminate']) }}>{{ $indeterminate }}</div>
+                    <div {{ $$indeterminate->attributes->class(['swap-indeterminate']) }}>{{ $indeterminate }}</div>
                 @endisset
             </label>
         blade;

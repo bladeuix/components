@@ -20,10 +20,10 @@ class Accordion extends Component
 
     public function render(): Closure
     {
-        return function (array $data): string {
+        return function (): string {
             return <<<'blade'
                 <details {{ $attributes->class($classes())->merge($detailsAttributes()) }}>
-                    <summary class="collapse-title">{{ $title }}</summary>
+                    <summary {{ $title->attributes->class(['collapse-title']) }}>{{ $title }}</summary>
                     <div class="collapse-content">{{ $slot }}</div>
                 </details>
             blade;

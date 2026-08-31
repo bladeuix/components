@@ -6,8 +6,8 @@ Swap allows you to toggle the visibility of two elements using a checkbox or a c
 
 ```preview-html
 <x-swap>
-    <x-slot:off>OFF</x-slot:off>
-    <x-slot:on>ON</x-slot:on>
+    <x-slot:off class="text-neutral font-medium">OFF</x-slot:off>
+    <x-slot:on class="text-success font-medium">ON</x-slot:on>
 </x-swap>
 ```
 
@@ -32,10 +32,10 @@ Swap allows you to toggle the visibility of two elements using a checkbox or a c
 ## Hamburger button
 
 ```preview-html
-<x-button circle class="swap swap-rotate">
+<x-swap circle rotate>
     <x-slot:off><svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/></svg></x-slot:off>
     <x-slot:on><svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"/></svg></x-slot:on>
-</x-button>
+</x-swap>
 ```
 
 ## Flip effect
@@ -52,16 +52,14 @@ Swap allows you to toggle the visibility of two elements using a checkbox or a c
 Instead of working with click, it shows the swap-on item if you add the `active` attribute. You can toggle this using JavaScript.
 
 ```preview-html
-<x-stack direction="start">
-    <x-swap class="text-6xl">
-        <x-slot:off>&#x1F975;</x-slot:off>
-        <x-slot:on>&#x1F976;</x-slot:on>
-    </x-swap>
-    <x-swap active class="text-6xl">
-        <x-slot:off>&#x1F973;</x-slot:off>
-        <x-slot:on>&#x1F622;</x-slot:on>
-    </x-swap>
-</x-stack>
+<x-swap class="text-6xl">
+    <x-slot:off>&#x1F975;</x-slot:off>
+    <x-slot:on>&#x1F976;</x-slot:on>
+</x-swap>
+<x-swap active class="text-6xl">
+    <x-slot:off>&#x1F973;</x-slot:off>
+    <x-slot:on>&#x1F622;</x-slot:on>
+</x-swap>
 ```
 
 ---
@@ -70,16 +68,16 @@ Instead of working with click, it shows the swap-on item if you add the `active`
 
 ### Swap Attributes
 
-| Name | Default | Description |
-| --- | --- | --- |
-| `active` | false | Activates the swap (no need for checkbox). |
-| `rotate` | false | Adds rotate effect to swap. |
-| `flip` | false | Adds flip effect to swap. |
+| Name     | Default | Description                                |
+|----------|---------|--------------------------------------------|
+| `active` | false   | Activates the swap (no need for checkbox). |
+| `rotate` | false   | Adds rotate effect to swap.                |
+| `flip`   | false   | Adds flip effect to swap.                  |
 
 ### Swap Slots
 
-| Name | Default | Description |
-| --- | --- | --- |
-| `on` | Empty | The child element that should be visible when swap is active. |
-| `off` | Empty | The child element that should be visible when swap is not active. |
-| `indeterminate` | Empty | The child element that should be visible when swap is indeterminate. |
+| Name            | Default | Description                                                          |
+|-----------------|---------|----------------------------------------------------------------------|
+| `on`            | Empty   | The child element that should be visible when swap is active.        |
+| `off`           | Empty   | The child element that should be visible when swap is not active.    |
+| `indeterminate` | Empty   | The child element that should be visible when swap is indeterminate. |

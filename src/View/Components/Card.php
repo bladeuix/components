@@ -32,7 +32,7 @@ class Card extends Component
                     <div class="card-body">
                         @if ($title)<h2 class="card-title">{{ $title }}</h2>@endif
                         {{ $slot }}
-                        @isset($actions)<div class="card-actions">{{ $actions }}</div>@endisset
+                        @isset($actions)<div {{ $actions->attributes->class(['card-actions']) }}>{{ $actions }}</div>@endisset
                     </div>
                     @if ($imageSrc && $imageBottom)<figure><img src="{{ $imageSrc }}" alt="{{ $imageAlt }}"></figure>@endif
                 </div>
